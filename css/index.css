@@ -52,6 +52,13 @@ tspan{
 	width: 150px;
     float: left;
 }
+#columnChart{
+	width: 350px; 
+	height: 200px;
+	margin: 0 auto;
+
+}
+ 
 .highcharts-background{
 	fill: rgba(255, 255, 255, 0.0);
 }
@@ -61,6 +68,3 @@ tspan{
 	line-height: 0.5;
 }
 
-.highcharts-title{
-		line-height: 0.5;
-}
