@@ -12,7 +12,7 @@ var controls;
 
 
 var scene = new THREE.Scene();
-scene.fog = new THREE.FogExp2( 0xcccccc, 0.009 );
+//scene.fog = new THREE.FogExp2( 0xcccccc, 0.009 );
 var camera = new THREE.PerspectiveCamera( 60, window.innerWidth/window.innerHeight, 0.1, 1000 );
 camera.position.z = 7;
 camera.position.y = 17;
