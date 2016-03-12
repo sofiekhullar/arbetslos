@@ -4,6 +4,12 @@ body{
 	background-image: url("images/background.jpg")
 }
 
+.containerMeny {
+    width: 450px;
+    float: right;
+
+}
+
 #container {
 	visibility: visible;
 	z-index: -1;
