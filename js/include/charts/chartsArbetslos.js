@@ -179,12 +179,12 @@ $('#columnChartJobb').highcharts({
         },
         series: [{
             name: 'Totalt',
-            color: '#ff4d4d',
+            color: '#00b300',
             data: [getLan(SELECTED_LAN_ID).n_lediga_jobb]
 
         }, {
             name: 'Platsbanken',
-            color: '#0066ff',
+            color: '#008000',
             data: [getLan(SELECTED_LAN_ID).n_platsannonser]
             }]
     });

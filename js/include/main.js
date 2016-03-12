@@ -19,6 +19,10 @@ scene.add(sceneGraph);
 
 
 EventsControls.attachEvent( 'onclick', function() {
+
+	console.log(this.focused.name);
+	activeLan = this.focused.name;
+	
 	activeLan = parseInt(this.focused.name);
 
 	var temp = SELECTED_LAN_ID;
@@ -28,14 +32,17 @@ EventsControls.attachEvent( 'onclick', function() {
 	console.log(getLan(SELECTED_LAN_ID).n_man_studieskuld);
 	console.log(activeLan);
 
+	document.getElementById("markerat_lan_title").innerHTML = getLan(SELECTED_LAN_ID).namn;
+
+
 	if(SELECTED_LAN_ID == temp){
 		SELECTED_LAN_ID = -1;
 		activeLan = 22;
 	}
 	
 	createCharts();
+	createCharts2();
 	
-	console.log(selectedId(activeLan));
 });
 
 EventsControls.attachEvent( 'mouseOver', function() {
