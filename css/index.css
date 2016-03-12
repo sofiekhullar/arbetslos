@@ -4,6 +4,8 @@ body{
 	background: rgba(255, 255, 255, 0.8);
 }
 
+
+
 #background{
 	z-index: -1;
 	position: fixed;
@@ -22,6 +24,13 @@ body{
 	padding: 10px;
 }
 
+#markerat_lan_title{
+	position: fixed;
+	color: white;
+	margin:0px;
+	padding:0px;
+	left:400px;
+}
 
 #container3D {
 	visibility: visible;
@@ -72,4 +81,5 @@ tspan{
 	font-size: 10px;
 	line-height: 0.5;
 }
+
 

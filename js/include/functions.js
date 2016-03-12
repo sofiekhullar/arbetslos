@@ -13,7 +13,7 @@ function onWindowResize() {
 function onDocumentMouseDown( event ) {
 
 	IS_MOUSE_DOWN = true;
-	event.preventDefault();
+	event.preventDefault();	
 }
 
 function onDocumentMouseUp( event ){

@@ -1,7 +1,6 @@
 //Skapa lista med län och initiera denna.
 var alla_lan = [];
 init_lan();
-var SELECTED_LAN_INDEX = -1;
 var SELECTED_LAN_ID = -1;
 
 //Load json files
@@ -20,13 +19,29 @@ scene.add(sceneGraph);
 
 
 EventsControls.attachEvent( 'onclick', function() {
+
 	console.log(this.focused.name);
 	activeLan = this.focused.name;
+	
+	activeLan = parseInt(this.focused.name);
+
+	var temp = SELECTED_LAN_ID;
+	SELECTED_LAN_ID = selectedId(activeLan);
+	
+	console.log(getLan(SELECTED_LAN_ID).n_kvinnor_arbetslosa);
+	console.log(activeLan);
+
+	document.getElementById("markerat_lan_title").innerHTML = getLan(SELECTED_LAN_ID).namn;
+
+
+	if(SELECTED_LAN_ID == temp){
+		SELECTED_LAN_ID = -1;
+		activeLan = 22;
+	}
+	
 	createCharts();
 	createCharts2();
-	SELECTED_LAN_INDEX = getLan(SELECTED_LAN_ID);
-
-	console.log(selectedId(activeLan));
+	
 });
 
 EventsControls.attachEvent( 'mouseOver', function() {
@@ -53,7 +68,6 @@ for(var lan = 0; lan < 21; lan++){
 
 
 console.log(alla_lan[1].mesh.position);
-
 
 
 var render = function () {
