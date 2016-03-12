@@ -3,6 +3,17 @@ body{
 	overflow: hidden;
 	background: rgba(255, 255, 255, 0.8);
 }
+h3 {
+    text-align: center;
+}
+p{
+	padding-left: 20px;
+	padding-right: 20px;
+	font-size: 18px;
+}
+.list{
+	padding-left: 100px;
+}
 
 #background{
 	z-index: -1;
