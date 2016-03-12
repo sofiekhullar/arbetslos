@@ -71,50 +71,51 @@ function getLan(id) {
 
 
 
+function selectedId(simon_id){
+	if(simon_id == 20)
+		return 10;
+	else if(simon_id == 6)
+		return 20;
+	else if(simon_id == 16)
+		return 9;
+	else if(simon_id == 5)
+		return 21;
+	else if(simon_id == 19)
+		return 13;
+	else if(simon_id == 3)
+		return 23;
+	else if(simon_id == 14)
+		return 6;
+	else if(simon_id == 18)
+		return 8;
+	else if(simon_id == 17)
+		return 7;
+	else if(simon_id == 1)
+		return 25;
+	else if(simon_id == 21)
+		return 12;
+	else if(simon_id == 10)
+		return 1;
+	else if(simon_id == 12)
+		return 4;
+	else if(simon_id == 7)
+		return 3;
+	else if(simon_id == 8)
+		return 17;
+	else if(simon_id == 2)
+		return 24;
+	else if(simon_id == 4)
+		return 22;
+	else if(simon_id == 9)
+		return 19;
+	else if(simon_id == 15)
+		return 14;
+	else if(simon_id == 11)
+		return 18;
+	else if(simon_id == 13)
+		return 5;
 
+	return -1;
 
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-
-	id: "",
-	namn: "",
-	total_befolkning: 0,
-
-	n_man_studieskuld: 0,
-	n_kvinnor_studieskuld: 0,
-	studieskuld_man: 0,
-	studieskuld_kvinnor: 0,
-
-	m: 0,
-	c: 0,
-	fp: 0,
-	kd: 0,
-	mp: 0,
-	s: 0,
-	v: 0,
-	sd: 0,
-
-	n_lediga_jobb: 0,
-	n_platsannonser: 0,
-
-	n_totalt_arbetslosa: 0,
-	n_kvinnor_arbetslosa: 0,
-	n_man_arbetslosa: 0,
-	n_unga_arbetslosa: 0,
-	n_unga_kvinnor_arbetslosa: 0,
-	n_unga_man_arbetslosa: 0 */
