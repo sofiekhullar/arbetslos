@@ -4,19 +4,18 @@
 
 <title>Välj mig</title>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
 
 <!-- -Load style- -->
 <link rel="stylesheet" type="text/css" href="css/index.css">
-<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+ <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 
 <!-- -External Libraries- -->
-<!--<script src="js/external/jquery.js"></script> -->
+<script src="js/external/jquery.js"></script>
 <script src="js/external/three.js"></script>
 <script src="js/external/EventsControls.js"></script>
 <script src="js/external/TrackballControls.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+ <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
 <!-- -Load OBJ- -->
 <script src="js/external/OBJLoad/MTLLoader.js"></script>
@@ -30,21 +29,22 @@
 <script src="js/include/initialize.js"></script>
 <script src="js/include/loadModels.js"></script>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+ 
+ 
 
 </head>
 <body>
 
 
-<div id="container"></div>
+<div id="container2"></div>
 
-<div class="containerMeny"> 
-  <h2>Arbetslöshet</h2>
+<div class="container">
+  <h2>Dynamic Tabs</h2>
   <ul class="nav nav-tabs">
-    <li class="active"><a href="#home"><i class="fa fa-home"></i></a></li>
-    <li><a href="#menu1">thja</a></li>
-    <li><a href="#menu2">hopp</a></li>
-    <li><a href="#menu3">Hej 3</a></li>
+    <li class="active"><a href="#home">Home</a></li>
+    <li><a href="#menu1">Menu 1</a></li>
+    <li><a href="#menu2">Menu 2</a></li>
+    <li><a href="#menu3">Menu 3</a></li>
   </ul>
 
   <div class="tab-content">
@@ -67,13 +67,20 @@
   </div>
 </div>
 
-
 <script>
+$(document).ready(function(){
+    $(".nav-tabs a").click(function(){
+        $(this).tab('show');
+    });
+});
+</script>
+<script>
+	
 
 	var renderer = new THREE.WebGLRenderer({ alpha: true, antialiasing: false });
 	renderer.setSize( window.innerWidth, window.innerHeight );
 	document.body.appendChild( renderer.domElement );
-
+	var EventsControls = new EventsControls( camera, renderer.domElement );
 	// TODO - render inside div
 
 	var controls = new THREE.TrackballControls( camera );
@@ -81,8 +88,6 @@
 	sceneGraph.add(sweden);
 	scene.add(sceneGraph);
 	
-
-	var EventsControls = new EventsControls( camera, renderer.domElement );
 	
 	EventsControls.attachEvent( 'onclick', function() {
 		console.log(this.focused.name);
