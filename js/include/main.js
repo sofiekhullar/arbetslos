@@ -1,6 +1,9 @@
+//Skapa lista med län och initiera denna.
 var alla_lan = [];
 init_lan();
-console.log(alla_lan);
+
+//Load json files
+loadData();
 
 var renderer = new THREE.WebGLRenderer({ alpha: true, antialiasing: false });
 renderer.setSize( window.innerWidth, window.innerHeight );

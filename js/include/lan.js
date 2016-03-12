@@ -19,8 +19,8 @@ var lan = function(namn, id, total_befolkning) {
 	this.v = 0;
 	this.sd = 0;
 
-	n_lediga_jobb = 0;
-	n_platsannonser = 0;
+	this.n_lediga_jobb = 0;
+	this.n_platsannonser = 0;
 
 	this.n_totalt_arbetslosa = 0;
 	this.n_kvinnor_arbetslosa = 0;
@@ -59,8 +59,9 @@ function init_lan() {
 
 function getLan(id) {
 	for(var i = 0; i < alla_lan.length; i++) {
-		if(alla_lan[i].id == id)
+		if(alla_lan[i].id == id) {
 			return alla_lan[i];
+		}
 	}
 }
 
