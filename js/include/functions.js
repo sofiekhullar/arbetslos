@@ -12,8 +12,11 @@ function onWindowResize() {
 
 function onDocumentMouseDown( event ) {
 
-	IS_MOUSE_DOWN = true;
-	event.preventDefault();	
+	//if(not clicking the menu)
+	if((window.innerWidth-event.clientX) >= 500){
+		IS_MOUSE_DOWN = true;
+		event.preventDefault();
+	}
 }
 
 function onDocumentMouseUp( event ){
