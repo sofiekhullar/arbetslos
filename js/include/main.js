@@ -49,6 +49,10 @@ EventsControls.attachEvent( 'mouseOver', function() {
     	this.mouseOvered.material.opacity = 0.8;
     	this.mouseOvered.scale.set(1,1.1,1);
 		this.mouseOvered.material.color.setHex(0x00ff00);
+		console.log("hej", this.mouseOvered.name);
+		console.log(selectedId(this.mouseOvered.name));
+		console.log(getLan(selectedId(this.mouseOvered.name)).namn);
+
 });
 
 EventsControls.attachEvent( 'mouseOut', function() {
