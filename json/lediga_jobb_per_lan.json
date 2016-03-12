@@ -1,0 +1,141 @@
+{
+  "soklista": {
+    "listnamn": "lan",
+    "totalt_antal_platsannonser": "45663",
+    "totalt_antal_ledigajobb": "139362",
+    "sokdata": [
+      {
+        "id": "10",
+        "namn": "Blekinge län",
+        "antal_platsannonser": "510",
+        "antal_ledigajobb": "3187"
+      },
+      {
+        "id": "20",
+        "namn": "Dalarnas län",
+        "antal_platsannonser": "1092",
+        "antal_ledigajobb": "3534"
+      },
+      {
+        "id": "9",
+        "namn": "Gotlands län",
+        "antal_platsannonser": "248",
+        "antal_ledigajobb": "726"
+      },
+      {
+        "id": "21",
+        "namn": "Gävleborgs län",
+        "antal_platsannonser": "930",
+        "antal_ledigajobb": "3649"
+      },
+      {
+        "id": "13",
+        "namn": "Hallands län",
+        "antal_platsannonser": "1142",
+        "antal_ledigajobb": "2715"
+      },
+      {
+        "id": "23",
+        "namn": "Jämtlands län",
+        "antal_platsannonser": "486",
+        "antal_ledigajobb": "1181"
+      },
+      {
+        "id": "6",
+        "namn": "Jönköpings län",
+        "antal_platsannonser": "1690",
+        "antal_ledigajobb": "5914"
+      },
+      {
+        "id": "8",
+        "namn": "Kalmar län",
+        "antal_platsannonser": "1146",
+        "antal_ledigajobb": "4993"
+      },
+      {
+        "id": "7",
+        "namn": "Kronobergs län",
+        "antal_platsannonser": "919",
+        "antal_ledigajobb": "3650"
+      },
+      {
+        "id": "25",
+        "namn": "Norrbottens län",
+        "antal_platsannonser": "979",
+        "antal_ledigajobb": "3881"
+      },
+      {
+        "id": "12",
+        "namn": "Skåne län",
+        "antal_platsannonser": "5270",
+        "antal_ledigajobb": "24747"
+      },
+      {
+        "id": "1",
+        "namn": "Stockholms län",
+        "antal_platsannonser": "13425",
+        "antal_ledigajobb": "28368"
+      },
+      {
+        "id": "4",
+        "namn": "Södermanlands län",
+        "antal_platsannonser": "1119",
+        "antal_ledigajobb": "3818"
+      },
+      {
+        "id": "3",
+        "namn": "Uppsala län",
+        "antal_platsannonser": "1611",
+        "antal_ledigajobb": "3379"
+      },
+      {
+        "id": "17",
+        "namn": "Värmlands län",
+        "antal_platsannonser": "865",
+        "antal_ledigajobb": "2922"
+      },
+      {
+        "id": "24",
+        "namn": "Västerbottens län",
+        "antal_platsannonser": "977",
+        "antal_ledigajobb": "3083"
+      },
+      {
+        "id": "22",
+        "namn": "Västernorrlands län",
+        "antal_platsannonser": "952",
+        "antal_ledigajobb": "3655"
+      },
+      {
+        "id": "19",
+        "namn": "Västmanlands län",
+        "antal_platsannonser": "1004",
+        "antal_ledigajobb": "3318"
+      },
+      {
+        "id": "14",
+        "namn": "Västra Götalands län",
+        "antal_platsannonser": "7924",
+        "antal_ledigajobb": "21790"
+      },
+      {
+        "id": "18",
+        "namn": "Örebro län",
+        "antal_platsannonser": "1052",
+        "antal_ledigajobb": "3583"
+      },
+      {
+        "id": "5",
+        "namn": "Östergötlands län",
+        "antal_platsannonser": "1945",
+        "antal_ledigajobb": "5707"
+      },
+      {
+        "id": "90",
+        "namn": "Ospecificerad arbetsort",
+        "antal_platsannonser": "377",
+        "antal_ledigajobb": "1562"
+      }
+    ]
+  }
+}

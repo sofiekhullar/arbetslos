@@ -1,0 +1,202 @@
+{
+  "Blad1": [
+    {
+      "län": "Stockholms län",
+      "alla_total": "4.1",
+      "alla_kvinnor": "4.9",
+      "alla_män": "5.0",
+      "ung_total": "4.8",
+      "ung_kvinnor": "3.9",
+      "ung_män": "5.7"
+    },
+    {
+      "län": "Uppsala län",
+      "alla_total": "4.2",
+      "alla_kvinnor": "3.7",
+      "alla_män": "4.6",
+      "ung_total": "5.1",
+      "ung_kvinnor": "3.6",
+      "ung_män": "6.5"
+    },
+    {
+      "län": "Södermanlands län",
+      "alla_total": "8.5",
+      "alla_kvinnor": "7.7",
+      "alla_män": "9.3",
+      "ung_total": "11.6",
+      "ung_kvinnor": "9.3",
+      "ung_män": "13.8"
+    },
+    {
+      "län": "Östergötlands län",
+      "alla_total": "6.1",
+      "alla_kvinnor": "6.3",
+      "alla_män": "7.6",
+      "ung_total": "9.2",
+      "ung_kvinnor": "7.8",
+      "ung_män": "10.5"
+    },
+    {
+      "län": "Jönköpings län",
+      "alla_total": "5.4",
+      "alla_kvinnor": "5.1",
+      "alla_män": "5.8",
+      "ung_total": "7.4",
+      "ung_kvinnor": "6.5",
+      "ung_män": "8.3"
+    },
+    {
+      "län": "Kronobergs län",
+      "alla_total": "6.8",
+      "alla_kvinnor": "6.2",
+      "alla_män": "7.3",
+      "ung_total": "9.2",
+      "ung_kvinnor": "7.7",
+      "ung_män": "10.5"
+    },
+    {
+      "län": "Kalmar län",
+      "alla_total": "6.1",
+      "alla_kvinnor": "5.4",
+      "alla_män": "6.8",
+      "ung_total": "9.1",
+      "ung_kvinnor": "7.2",
+      "ung_män": "10.7"
+    },
+    {
+      "län": "Gotlands län",
+      "alla_total": "6.2",
+      "alla_kvinnor": "5.7",
+      "alla_män": "6.6",
+      "ung_total": "10.2",
+      "ung_kvinnor": "8.6",
+      "ung_män": "11.6"
+    },
+    {
+      "län": "Blekinge län",
+      "alla_total": "8.6",
+      "alla_kvinnor": "7.6",
+      "alla_män": "9.6",
+      "ung_total": "14.6",
+      "ung_kvinnor": "12.3",
+      "ung_män": "16.5"
+    },
+    {
+      "län": "Skåne län",
+      "alla_total": "7.6",
+      "alla_kvinnor": "6.8",
+      "alla_män": "8.3",
+      "ung_total": "9.7",
+      "ung_kvinnor": "7.9",
+      "ung_män": "11.5"
+    },
+    {
+      "län": "Hallands län",
+      "alla_total": "5.1",
+      "alla_kvinnor": "4.6",
+      "alla_män": "5.5",
+      "ung_total": "6.8",
+      "ung_kvinnor": "4.9",
+      "ung_män": "8.5"
+    },
+    {
+      "län": "Västra Götalands län",
+      "alla_total": "5.6",
+      "alla_kvinnor": "5.0",
+      "alla_män": "6.2",
+      "ung_total": "6.1",
+      "ung_kvinnor": "5.7",
+      "ung_män": "8.2"
+    },
+    {
+      "län": "Värmlands län",
+      "alla_total": "6.6",
+      "alla_kvinnor": "5.7",
+      "alla_män": "7.4",
+      "ung_total": "10.3",
+      "ung_kvinnor": "8.4",
+      "ung_män": "12.1"
+    },
+    {
+      "län": "Örebro län",
+      "alla_total": "6.5",
+      "alla_kvinnor": "5.6",
+      "alla_män": "7.4",
+      "ung_total": "9.2",
+      "ung_kvinnor": "7.1",
+      "ung_män": "11.3"
+    },
+    {
+      "län": "Västmanlands län",
+      "alla_total": "7.4",
+      "alla_kvinnor": "6.7",
+      "alla_män": "8.0",
+      "ung_total": "10.4",
+      "ung_kvinnor": "8.3",
+      "ung_män": "12.5"
+    },
+    {
+      "län": "Dalarnas län",
+      "alla_total": "5.7",
+      "alla_kvinnor": "4.7",
+      "alla_män": "6.6",
+      "ung_total": "8.2",
+      "ung_kvinnor": "5.1",
+      "ung_män": "10.2"
+    },
+    {
+      "län": "Gävleborgs län",
+      "alla_total": "9.3",
+      "alla_kvinnor": "8.3",
+      "alla_män": "10.1",
+      "ung_total": "14.9",
+      "ung_kvinnor": "12.2",
+      "ung_män": "17.3"
+    },
+    {
+      "län": "Västernorrlands län",
+      "alla_total": "7.5",
+      "alla_kvinnor": "6.4",
+      "alla_män": "8.5",
+      "ung_total": "11.8",
+      "ung_kvinnor": "9.2",
+      "ung_män": "14.2"
+    },
+    {
+      "län": "Jämtlands län",
+      "alla_total": "6.2",
+      "alla_kvinnor": "5.1",
+      "alla_män": "7.2",
+      "ung_total": "9.6",
+      "ung_kvinnor": "7.4",
+      "ung_män": "11.7"
+    },
+    {
+      "län": "Västerbottens län",
+      "alla_total": "5.5",
+      "alla_kvinnor": "4.6",
+      "alla_män": "6.3",
+      "ung_total": "8.4",
+      "ung_kvinnor": "6.1",
+      "ung_män": "10.6"
+    },
+    {
+      "län": "Norrbottens län",
+      "alla_total": "5.9",
+      "alla_kvinnor": "5.3",
+      "alla_män": "6.5",
+      "ung_total": "9.9",
+      "ung_kvinnor": "7.8",
+      "ung_män": "11.5"
+    },
+    {
+      "län": "Riket",
+      "alla_total": "6.1",
+      "alla_kvinnor": "5.6",
+      "alla_män": "6.7",
+      "ung_total": "8.1",
+      "ung_kvinnor": "6.4",
+      "ung_män": "9.6"
+    }
+  ]
+}

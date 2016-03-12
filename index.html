@@ -29,8 +29,11 @@
 <script src="js/include/functions.js"></script>
 <script src="js/include/initialize.js"></script>
 <script src="js/include/loadModels.js"></script>
+<script src="js/include/loadData.js"></script>
+<script src="js/include/lan.js"></script>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 
 </head>
 <body>
@@ -69,6 +72,12 @@
 
 
 <script>
+	//Initiera listan med län	
+	var alla_lan = [];
+	init_lan();
+
+	//Ladda in data från jsonfiler
+	testData();
 
 	var renderer = new THREE.WebGLRenderer({ alpha: true, antialiasing: false });
 	renderer.setSize( window.innerWidth, window.innerHeight );
