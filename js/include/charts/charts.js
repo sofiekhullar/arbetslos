@@ -1,6 +1,6 @@
     $(document).ready(function () {
 
-        // Build the chart
+        // Skapa cirkeldiagram för totalt antal arbetslösa
         $('#pieChartTotalt').highcharts({
             chart: {
                 plotBackgroundColor: null,
@@ -43,7 +43,7 @@
         });
     
 
-     // Build the chart
+     // Skapa cirkeldiagram för totalt antal unga arbetslösa
         $('#pieChartUnga').highcharts({
             chart: {
                 plotBackgroundColor: null,
@@ -85,6 +85,7 @@
             }]
         });
 
+// Skapa stapel diagram för personer 
 $('#columnChartArbetslosa').highcharts({
         chart: {
             type: 'column'
