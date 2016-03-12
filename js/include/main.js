@@ -22,7 +22,9 @@ scene.add(sceneGraph);
 EventsControls.attachEvent( 'onclick', function() {
 	console.log(this.focused.name);
 	activeLan = this.focused.name;
+	createCharts();
 	SELECTED_LAN_INDEX = getLan(SELECTED_LAN_ID);
+
 });
 
 EventsControls.attachEvent( 'mouseOver', function() {
@@ -49,6 +51,8 @@ for(var lan = 0; lan < 21; lan++){
 
 
 console.log(alla_lan[1].mesh.position);
+
+
 
 var render = function () {
 

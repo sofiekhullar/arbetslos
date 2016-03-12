@@ -1,4 +1,4 @@
-    $(document).ready(function () {
+function createCharts() {
 
         // Skapa cirkeldiagram för totalt antal arbetslösa
         $('#pieChartTotalt').highcharts({
@@ -184,5 +184,5 @@ $('#columnChartJobb').highcharts({
             data: [83.6]
             }]
     });
-    });
+    }
 
