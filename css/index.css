@@ -4,8 +4,6 @@ body{
 	background: rgba(255, 255, 255, 0.8);
 }
 
-
-
 #background{
 	z-index: -1;
 	position: fixed;
@@ -45,13 +43,13 @@ body{
 
 #pieChartTotalt{
     height: 200px;
-    width: 240px;
+    width: 230px;
     float: left;
 }
 
 #pieChartUnga{
 	height: 200px;
-	width: 240px;
+	width: 230px;
     float: left;
 }
 #columnChartArbetslosa{
