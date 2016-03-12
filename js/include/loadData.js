@@ -5,8 +5,8 @@ function loadData() {
 	});
 
 	$.getJSON("json/csn.json", function(json) {
-   		console.log(json); // this will show the info it in firebug console
 		loadCSN(json.dataset);
+	
 	});
 }
 
@@ -51,10 +51,30 @@ function loadVotes(dataset) {
 		
 }
 
-function loadCSN() {
+function loadCSN(dataset) {
 
 	$.each(dataset.dimension.Region.category.index, function(lan_id, index) {
 		
+
+		//indexera i stycken om 8 eftersom det finns 8 partier
+		index = index * 256;
+
+	for(i=index; i < index+128; i +=2){
+
+
+		getLan(lan_id).n_man_studieskuld += dataset.value[i];
+		getLan(lan_id).studieskuld_man += dataset.value[i+ 1];
+
+	}
+
+	for(i=index + 128; i < index+256; i +=2){
+
+
+		getLan(lan_id).n_kvinnor_studieskuld += dataset.value[i];
+		getLan(lan_id).studieskuld_kvinnor += dataset.value[i+ 1];
+
+	}
+
 
 
 	});
