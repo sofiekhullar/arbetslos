@@ -66,6 +66,14 @@ body{
 	margin: 0 auto;
 	float: left;
 }
+#pieChartParti{
+	width: 470px; 
+	height: 430px;
+	padding-left: 20px;
+	padding-top: 20px;
+	margin: 0 auto;
+}
+
 #barChart{
  	width: 400px; 
  	height: 400px; 

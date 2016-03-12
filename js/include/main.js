@@ -42,6 +42,7 @@ EventsControls.attachEvent( 'onclick', function() {
 	
 	createCharts();
 	createCharts2();
+	createCharts3();
 	
 });
 
