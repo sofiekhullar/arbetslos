@@ -6,7 +6,7 @@
                 plotBackgroundColor: null,
                 plotBorderWidth: null,
                 plotShadow: false,
-                backgroundColor:'transparent',
+                backgroundColor: 'rgba(0,0,0,0)',
                 width: null,
                 height: null,
                 type: 'pie'
