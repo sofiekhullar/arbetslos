@@ -2,6 +2,7 @@
 var alla_lan = [];
 init_lan();
 var SELECTED_LAN_INDEX = -1;
+var SELECTED_LAN_ID = -1;
 
 //Load json files
 loadData();
@@ -22,7 +23,7 @@ scene.add(sceneGraph);
 EventsControls.attachEvent( 'onclick', function() {
 	console.log(this.focused.name);
 	activeLan = this.focused.name;
-	console.log("id", selectedId(activeLan));
+	console.log(selectedId(activeLan));
 });
 
 EventsControls.attachEvent( 'mouseOver', function() {

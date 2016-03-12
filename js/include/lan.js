@@ -69,9 +69,9 @@ function getLan(id) {
 	}
 }
 
+
+
 function selectedId(simon_id){
-
-
 	if(simon_id == 20)
 		return 10;
 	else if(simon_id == 6)
@@ -118,3 +118,4 @@ function selectedId(simon_id){
 	return -1;
 
 }
+
