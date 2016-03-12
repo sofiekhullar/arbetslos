@@ -8,6 +8,7 @@ var textureLoader = new THREE.TextureLoader();
 var mouse = new THREE.Vector2();
 var lan_array = [];
 var controls;
+var IS_MOUSE_DOWN = false;
 
 
 
