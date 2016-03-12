@@ -5,8 +5,10 @@ body{
 }
 
 .containerMeny {
-    width: 450px;
-    float: right;
+    width: 400px;
+    position: fixed;
+
+    right: 0px;
 
 }
 

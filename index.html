@@ -7,7 +7,9 @@
 
 <!-- -Load style- -->
 <link rel="stylesheet" type="text/css" href="css/index.css">
- <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
 <!-- -External Libraries- -->
 <script src="js/external/three.js"></script>
@@ -15,6 +17,7 @@
 <script src="js/external/TrackballControls.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+ <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
 
 <!-- -Load OBJ- -->
 <script src="js/external/OBJLoad/MTLLoader.js"></script>
@@ -28,51 +31,39 @@
 <script src="js/include/initialize.js"></script>
 <script src="js/include/loadModels.js"></script>
 
-
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
- 
-
 </head>
 <body>
 
 
 <div id="container2"></div>
 
-<script type="text/javascript">
-$(document).ready(function(){ 
-    $("#myTab li:eq(1) a").tab('show');
-});
-</script>
-
 <div class="containerMeny">
     <ul class="nav nav-tabs" id="myTab">
-        <li><a data-toggle="tab" href="#sectionA">Section A</a></li>
-        <li><a data-toggle="tab" href="#sectionB">Section B</a></li>
-        <li><a data-toggle="tab" href="#dropdown1">Dropdown1</a></li>
-        <li><a data-toggle="tab" href="#dropdown2">Dropdown2</a></li>
+        <li><a data-toggle="tab" href="#sectionA"><i class="fa fa-home fa-2x"></i></a></li>
+        <li><a data-toggle="tab" href="#sectionB"><i class="fa fa-bar-chart fa-2x"></i></a></li>
+        <li><a data-toggle="tab" href="#dropdown1"><i class="fa fa-venus-mars fa-2x"></i></a></li>
             </ul>
         </li>
     </ul>
     <div class="tab-content">
         <div id="sectionA" class="tab-pane fade in active">
-            <h3>Section A</h3>
-            <p>Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui. Raw denim you probably haven.</p>
+            <h3>Välkommen</h3>
+            <p>Här ska det så en fin text och förklara syftet med denna fina sidan!</p>
         </div>
         <div id="sectionB" class="tab-pane fade">
-            <h3>Section B</h3>
-            <p>Vestibulum nec erat eu nulla rhoncus fringilla ut non neque. Vivamus nibh urna, ornare id gravida ut, mollis a magna. Aliquam porttitor conconvallis. Nunc facilisis leo at faucibus adipiscing.</p>
+            <h3>Arbetslöshet</h3>
+            <p>Här visas massa grafer.</p>
+            
+            <script src="js/include/pieCharts.js"></script>
+			<script src="https://code.highcharts.com/highcharts.js"></script>
+			<div id="pieChart" style="max-width: 300px; max-height: 300; margin: 0 auto"></div>
+
         </div>
         <div id="dropdown1" class="tab-pane fade">
-            <h3>Dropdown 1</h3>
-            <p>WInteger convallis, nulla in sollicitudin placerat, ligula enim auctor lectus, in mollis diam dolor at lorem. Sed bibendum nibh sit.</p>
+            <h3>Killarna mot tjejerna</h3>
+            <p>Fler diagram och grafer.</p>
         </div>
-        <div id="dropdown2" class="tab-pane fade">
-            <h3>Dropdown 2</h3>
-            <p>Donec vel placerat quam, ut euismod risus. Sed a mi suscipit, elementum sem a, hendrerit velit. Donec at erat magna. Sed darturient.</p>
-        </div>
+       </div>
 
 <script src="js/include/main.js"></script>
 <script src="js/include/menuFunctions.js"></script>

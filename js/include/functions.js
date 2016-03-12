@@ -15,6 +15,4 @@ function onDocumentMouseDown( event ) {
 	mouse.x = ( event.clientX / renderer.domElement.width ) * 2 - 1;
 	mouse.y = - ( event.clientY / renderer.domElement.height ) * 2 + 1;
 	
-
-
 }
