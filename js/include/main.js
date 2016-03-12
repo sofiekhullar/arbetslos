@@ -21,10 +21,16 @@ scene.add(sceneGraph);
 EventsControls.attachEvent( 'onclick', function() {
 	activeLan = parseInt(this.focused.name);
 
+	var temp = SELECTED_LAN_ID;
 	SELECTED_LAN_ID = selectedId(activeLan);
 	
 	console.log(getLan(SELECTED_LAN_ID).n_kvinnor_arbetslosa);
 	console.log(activeLan);
+
+	if(SELECTED_LAN_ID == temp){
+		SELECTED_LAN_ID = -1;
+		activeLan = 22;
+	}
 	
 	createCharts();
 	
@@ -55,7 +61,6 @@ for(var lan = 0; lan < 21; lan++){
 
 
 console.log(alla_lan[1].mesh.position);
-
 
 
 var render = function () {
