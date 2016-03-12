@@ -84,6 +84,7 @@ function createCharts() {
                 }]
             }]
         });
+console.log(getLan(SELECTED_LAN_ID).n_unga_kvinnor_arbetslosa);
 
 // Skapa stapel diagram för personer 
 $('#columnChartArbetslosa').highcharts({
