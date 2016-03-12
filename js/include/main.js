@@ -28,7 +28,8 @@ EventsControls.attachEvent( 'onclick', function() {
 	var temp = SELECTED_LAN_ID;
 	SELECTED_LAN_ID = selectedId(activeLan);
 	
-	console.log(getLan(SELECTED_LAN_ID).n_kvinnor_arbetslosa);
+	console.log(getLan(SELECTED_LAN_ID).n_kvinnor_studieskuld);
+	console.log(getLan(SELECTED_LAN_ID).n_man_studieskuld);
 	console.log(activeLan);
 
 	document.getElementById("markerat_lan_title").innerHTML = getLan(SELECTED_LAN_ID).namn;
