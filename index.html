@@ -18,7 +18,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-
+<script src="https://code.highcharts.com/highcharts.js"></script>
 
 <!-- -Load OBJ- -->
 <script src="js/external/OBJLoad/MTLLoader.js"></script>
@@ -34,11 +34,13 @@
 <script src="js/include/loadModels.js"></script>
 <script src="js/include/loadData.js"></script>
 <script src="js/include/lan.js"></script>
+<!-- -Load Charts- -->
+<script src="js/include/charts/pieChartTot.js"></script>
+
 
 
 </head>
 <body>
-
 
 <div id="container3D"></div>
 
@@ -59,9 +61,9 @@
             <h3>Arbetslöshet</h3>
             <p>Här visas massa grafer.</p>
             
-            <script src="js/include/pieCharts.js"></script>
-			<script src="https://code.highcharts.com/highcharts.js"></script>
-			<div id="pieChart" style="width: 300px; height: 300px; margin: 0 auto"></div>
+
+			<div id="pieChartTot"></div>
+			<div id="pieChartUng"></div>
 
         </div>
         <div id="dropdown1" class="tab-pane fade">

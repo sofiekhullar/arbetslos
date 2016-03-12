@@ -7,9 +7,7 @@ body{
 .containerMeny {
     width: 400px;
     position: fixed;
-
     right: 0px;
-
 }
 
 #container {
@@ -20,5 +18,19 @@ body{
 	left: 0;
 	height: 100%;
 	width: 100%;
+}
 
+#pieChartTot{
+    height: 200px;
+    width: 50%;
+    float: left;
+}
+
+#pieChartUng{
+	height: 200px;
+	width: 50%;
+    float: left;
+}
+.highcharts-background{
+	fill: rgba(255, 255, 255, 0.0);
 }
