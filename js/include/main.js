@@ -20,17 +20,12 @@ scene.add(sceneGraph);
 
 EventsControls.attachEvent( 'onclick', function() {
 
-	console.log(this.focused.name);
 	activeLan = this.focused.name;
 	
 	activeLan = parseInt(this.focused.name);
 
 	var temp = SELECTED_LAN_ID;
 	SELECTED_LAN_ID = selectedId(activeLan);
-	
-	console.log(getLan(SELECTED_LAN_ID).n_kvinnor_studieskuld);
-	console.log(getLan(SELECTED_LAN_ID).n_man_studieskuld);
-	console.log(activeLan);
 
 	document.getElementById("markerat_lan_title").innerHTML = getLan(SELECTED_LAN_ID).namn;
 
@@ -67,9 +62,6 @@ camera.lookAt(new THREE.Vector3(0,1,10));
 for(var lan = 0; lan < 21; lan++){
 	alla_lan[lan].mesh = mesh_array[lan];
 }
-
-
-console.log(alla_lan[1].mesh.position);
 
 
 var render = function () {
