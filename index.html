@@ -26,6 +26,7 @@
 <script src="js/include/interaction.js"></script>
 <script src="js/include/functions.js"></script>
 <script src="js/include/initialize.js"></script>
+
 <script src="js/include/loadModels.js"></script>
 <script src="js/include/loadData.js"></script>
 <script src="js/include/lan.js"></script>
@@ -33,111 +34,19 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 
+
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 </head>
 <body>
 
 
 <div id="container"></div>
 
-<div class="containerMeny"> 
-  <h2>Arbetslöshet</h2>
-  <ul class="nav nav-tabs">
-    <li class="active"><a href="#home"><i class="fa fa-home"></i></a></li>
-    <li><a href="#menu1">thja</a></li>
-    <li><a href="#menu2">hopp</a></li>
-    <li><a href="#menu3">Hej 3</a></li>
-  </ul>
-
-  <div class="tab-content">
-    <div id="home" class="tab-pane fade in active">
-      <h3>HOME</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-    </div>
-    <div id="menu1" class="tab-pane fade">
-      <h3>Menu 1</h3>
-      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-    </div>
-    <div id="menu2" class="tab-pane fade">
-      <h3>Menu 2</h3>
-      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
-    </div>
-    <div id="menu3" class="tab-pane fade">
-      <h3>Menu 3</h3>
-      <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-    </div>
-  </div>
-</div>
-
-
-<script>
-	//Initiera listan med län	
-	var alla_lan = [];
-	init_lan();
-
-	//Ladda in data från jsonfiler
-	testData();
-
-	var renderer = new THREE.WebGLRenderer({ alpha: true, antialiasing: false });
-	renderer.setSize( window.innerWidth, window.innerHeight );
-	document.body.appendChild( renderer.domElement );
-
-	// TODO - render inside div
-
-	var controls = new THREE.TrackballControls( camera );
-
-	sceneGraph.add(sweden);
-	scene.add(sceneGraph);
-	
-
-	var EventsControls = new EventsControls( camera, renderer.domElement );
-	
-	EventsControls.attachEvent( 'onclick', function() {
-		console.log(this.focused.name);
-		activeLan = this.focused.name;
-	});
-
-	EventsControls.attachEvent( 'mouseOver', function() {
-
-	    	this.mouseOvered.material.opacity = 0.8;
-	    	this.mouseOvered.scale.set(1,1.1,1);
-			this.mouseOvered.material.color.setHex(0x00ff00);
-	});
-
-	EventsControls.attachEvent( 'mouseOut', function() {
-	    	this.mouseOvered.material.opacity = 1;
-	    	this.mouseOvered.scale.set(1,1,1);
-			this.mouseOvered.material.color.setHex(0xffffff);
-
-	});
-
-
-
-	sweden.scale.set(1,3,1);
-
-	
-	var render = function () {
-
-		time = new Date()/800;
-
-		for(var lan = 1; lan < 22; lan++){
-			material_array[lan].color.setRGB(0.1,((Math.sin(time + lan*0.1)+1)/1)*0.2, 0.1);
-		}
-			material_array[activeLan].color.setRGB(0.5,0.9,0.5);
-		
-
-		requestAnimationFrame( render );
-		controls.update();
-
-		renderer.render(scene, camera);
-	};
-
-	render();
-
-
-
-
-</script> 
-=======
 <div id="container3D"></div>
 
 <div class="containerMeny">
@@ -170,7 +79,6 @@
 <script src="js/include/main.js"></script>
 <script src="js/include/loadModels.js"></script>
 <script src="js/include/menuFunctions.js"></script>
->>>>>>> b73c259b96d916ac6478b5554c33a97ec059a121
 
 </body>
 </html>

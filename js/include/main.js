@@ -1,3 +1,7 @@
+var alla_lan = [];
+init_lan();
+console.log(alla_lan);
+
 var renderer = new THREE.WebGLRenderer({ alpha: true, antialiasing: false });
 renderer.setSize( window.innerWidth, window.innerHeight );
 document.body.appendChild( renderer.domElement );
