@@ -8,6 +8,7 @@ loadData();
 var renderer = new THREE.WebGLRenderer({ alpha: true, antialiasing: false });
 renderer.setSize( window.innerWidth, window.innerHeight );
 document.body.appendChild( renderer.domElement );
+renderer.setClearColor( 0xFFFFFF, 0.2 );
 var EventsControls = new EventsControls( camera, renderer.domElement );
 // TODO - render inside div
 
@@ -40,6 +41,8 @@ EventsControls.attachEvent( 'mouseOut', function() {
 sweden.scale.set(1,3,1);
 
 var render = function () {
+
+	camera.look
 
 	time = new Date()/800;
 
