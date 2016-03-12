@@ -14,7 +14,6 @@ renderer.setClearColor( 0xFFFFFF, 0.2 );
 var EventsControls = new EventsControls( camera, renderer.domElement );
 // TODO - render inside div
 
-var controls = new THREE.TrackballControls( camera );
 
 sceneGraph.add(sweden);
 scene.add(sceneGraph);
@@ -45,7 +44,7 @@ EventsControls.attachEvent( 'mouseOut', function() {
 
 sweden.scale.set(1,3,1);
 camera.up = new THREE.Vector3(0,1,0);
-camera.lookAt(new THREE.Vector3(100,1,0));
+camera.lookAt(new THREE.Vector3(0,1,10));
 
 for(var lan = 0; lan < 21; lan++){
 	alla_lan[lan].mesh = mesh_array[lan];
@@ -76,7 +75,6 @@ var render = function () {
 	
 
 	requestAnimationFrame( render );
-	controls.update();
 
 	renderer.render(scene, camera);
 };
