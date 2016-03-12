@@ -33,11 +33,11 @@ function createCharts() {
                 data: [{
                     name: 'Kvinnor',
                     color: '#ff4d4d',
-                    y: 56.33
+                    y: getLan(SELECTED_LAN_ID).n_kvinnor_arbetslosa
                 }, {
                     name: 'Män',
                     color: '#0066ff',
-                    y: 24.03
+                    y: getLan(SELECTED_LAN_ID).n_man_arbetslosa
                 }]
             }]
         });
@@ -76,11 +76,11 @@ function createCharts() {
                 data: [{
                     name: 'Kvinnor',
                     color: '#ff4d4d',
-                    y: 56.33
+                    y: getLan(SELECTED_LAN_ID).n_unga_kvinnor_arbetslosa
                 }, {
                     name: 'Män',
                     color: '#0066ff',
-                    y: 24.03
+                    y: getLan(SELECTED_LAN_ID).n_unga_man_arbetslosa
                 }]
             }]
         });

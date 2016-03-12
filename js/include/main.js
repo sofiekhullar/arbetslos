@@ -1,7 +1,6 @@
 //Skapa lista med län och initiera denna.
 var alla_lan = [];
 init_lan();
-var SELECTED_LAN_INDEX = -1;
 var SELECTED_LAN_ID = -1;
 
 //Load json files
@@ -21,11 +20,15 @@ scene.add(sceneGraph);
 
 
 EventsControls.attachEvent( 'onclick', function() {
-	console.log(this.focused.name);
-	activeLan = this.focused.name;
-	createCharts();
-	SELECTED_LAN_INDEX = getLan(SELECTED_LAN_ID);
+	activeLan = parseInt(this.focused.name);
 
+	SELECTED_LAN_ID = selectedId(activeLan);
+	
+	console.log(getLan(SELECTED_LAN_ID).n_kvinnor_arbetslosa);
+	console.log(activeLan);
+	
+	createCharts();
+	
 	console.log(selectedId(activeLan));
 });
 
