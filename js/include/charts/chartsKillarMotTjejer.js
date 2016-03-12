@@ -4,7 +4,7 @@
             type: 'bar'
         },
         title: {
-            text: 'Jämställdhets parametrar??'
+            text: 'Skillnad mellan kvinnor och män i länet'
         },
         xAxis: {
             categories: ['Personer med studieskuld', 'Studieskuld i kronor', 'Arbetslösa alla åldrar', 'Unga arbetslösa']
