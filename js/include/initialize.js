@@ -17,7 +17,10 @@ var camera = new THREE.PerspectiveCamera( 60, window.innerWidth/window.innerHeig
 camera.position.z = 7;
 camera.position.y = 17;
 camera.position.x = -17;
+camera.lookAt( new THREE.Vector3( 0, -0, 0 ) );
+
 scene.add(camera);
+
 
 var sceneGraph = new THREE.Object3D;
 var sweden = new THREE.Object3D;
@@ -29,10 +32,6 @@ var lan = {
 		  'namn' : "saknas"
 
 		}
-
-
-
-
 
 
 
@@ -61,12 +60,20 @@ THREE.Loader.Handlers.add( /\.dds$/i, new THREE.DDSLoader() );
 ////////////////////// Ladda in alla län ////////////////////////
 var loader_array = [];
 var material_array = [];
+var mesh_array = [];
 
 
 for(var id = 1; id < 25; id++){
 
 	var material = new THREE.MeshLambertMaterial( {color: 0x3344aa} );
 	material_array.push(material);
+}
+
+for(var id = 1; id < 23; id++){
+
+	var meshObject = new THREE.Object3D;
+	mesh_array.push(meshObject);
+	sweden.add(meshObject);
 }
 
 for(var id = 1; id < 22; id++){

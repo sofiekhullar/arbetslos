@@ -34,21 +34,36 @@ EventsControls.attachEvent( 'mouseOut', function() {
     	this.mouseOvered.material.opacity = 1;
     	this.mouseOvered.scale.set(1,1,1);
 		this.mouseOvered.material.color.setHex(0xffffff);
-
 });
 
 
 sweden.scale.set(1,3,1);
+camera.up = new THREE.Vector3(0,1,0);
+camera.lookAt(new THREE.Vector3(100,1,0));
+
+for(var lan = 0; lan < 21; lan++){
+	alla_lan[lan].mesh = mesh_array[lan];
+}
+
+
+console.log(alla_lan[1].mesh.position);
 
 var render = function () {
 
-	camera.look
 
-	time = new Date()/800;
+	time = new Date()/300;
+	//alla_lan[20].mesh.position.y= Math.sin(time);
+
+	//camera.position.y = Math.sin(10*time) + 17;
 
 	for(var lan = 1; lan < 22; lan++){
-		material_array[lan].color.setRGB(0.1,((Math.sin(time + lan*0.1)+1)/1)*0.2, 0.1);
+		// Mesh
+		//mesh_array[lan].position.set(0, ((Math.sin(time + lan*0.1)+1)/2)*1,0);
+		// Color
+		//material_array[lan].color.setRGB(1, ((Math.sin(time + lan*0.1)+1)/2)*0.3+0.7,((Math.sin(time + lan*0.1)+1)/2)*0.3+0.7);
+		material_array[lan].color.setRGB(1, 1, 1);
 	}
+
 		material_array[activeLan].color.setRGB(0.5,0.9,0.5);
 	
 
