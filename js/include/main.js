@@ -23,6 +23,7 @@ EventsControls.attachEvent( 'onclick', function() {
 	console.log(this.focused.name);
 	activeLan = this.focused.name;
 	createCharts();
+	createCharts2();
 	SELECTED_LAN_INDEX = getLan(SELECTED_LAN_ID);
 
 	console.log(selectedId(activeLan));

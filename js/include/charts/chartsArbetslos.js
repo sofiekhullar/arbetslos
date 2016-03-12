@@ -175,12 +175,12 @@ $('#columnChartJobb').highcharts({
         },
         series: [{
             name: 'Totalt',
-            color: '#ff4d4d',
+            color: '#009900',
             data: [49.9]
 
         }, {
             name: 'Platsbanken',
-            color: '#0066ff',
+            color: '#00cc00',
             data: [83.6]
             }]
     });
