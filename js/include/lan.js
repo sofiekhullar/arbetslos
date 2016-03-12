@@ -69,52 +69,73 @@ function getLan(id) {
 	}
 }
 
+function selectedId(simon_id){
 
+	var id;
 
+	if(simon_id == 20){
+		id = 10;
+	}
+	else if(simon_id == 6){
+		id = 20;
+	}
+	else if(simon_id == 16){
+		id = 9;
+	}
+	else if(simon_id == 5){
+		id = 21;
+	}
+	else if(simon_id == 19){
+		id = 13;
+	}
+	else if(simon_id == 3){
+		id = 23;
+	}
+	else if(simon_id == 14){
+		id = 6;
+	}
+	else if(simon_id == 18){
+		id = 8;
+	}
+	else if(simon_id == 17){
+		id = 7;
+	}
+	else if(simon_id == 1){
+		id = 25;
+	}
+	else if(simon_id == 21){
+		id = 12;
+	}
+	else if(simon_id == 10){
+		id = 1;
+	}
+	else if(simon_id == 12){
+		id = 4;
+	}
+	else if(simon_id == 7){
+		id = 3;
+	}
+	else if(simon_id == 8){
+		id = 17;
+	}
+	else if(simon_id == 2){
+		id = 24;
+	}
+	else if(simon_id == 4){
+		id = 22;
+	}
+	else if(simon_id == 9){
+		id = 19;
+	}
+	else if(simon_id == 15){
+		id = 14;
+	}
+	else if(simon_id == 11){
+		id = 18;
+	}
+	else if(simon_id == 13){
+		id = 5;
+	}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-
-	id: "",
-	namn: "",
-	total_befolkning: 0,
-
-	n_man_studieskuld: 0,
-	n_kvinnor_studieskuld: 0,
-	studieskuld_man: 0,
-	studieskuld_kvinnor: 0,
-
-	m: 0,
-	c: 0,
-	fp: 0,
-	kd: 0,
-	mp: 0,
-	s: 0,
-	v: 0,
-	sd: 0,
-
-	n_lediga_jobb: 0,
-	n_platsannonser: 0,
-
-	n_totalt_arbetslosa: 0,
-	n_kvinnor_arbetslosa: 0,
-	n_man_arbetslosa: 0,
-	n_unga_arbetslosa: 0,
-	n_unga_kvinnor_arbetslosa: 0,
-	n_unga_man_arbetslosa: 0 */
+	return id;
+}
