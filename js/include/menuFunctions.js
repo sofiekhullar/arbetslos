@@ -1,7 +1,3 @@
-$(document).ready(function(){
-    $(".nav-tabs a").click(function(){
-
-    	console.log(this);
-        $(this).tab('show');
-    });
+$(document).ready(function(){ 
+    $("#myTab li:eq(1) a").tab('show');
 });
