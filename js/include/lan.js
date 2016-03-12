@@ -3,7 +3,8 @@ var lan = function(namn, id, total_befolkning) {
 	this.id = id;
 	this.namn = namn;
 	this.total_befolkning = total_befolkning;
-
+ 
+	this.mesh = new THREE.Object3D;
 
 	this.n_man_studieskuld = 0;
 	this.n_kvinnor_studieskuld = 0;

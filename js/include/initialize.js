@@ -60,12 +60,20 @@ THREE.Loader.Handlers.add( /\.dds$/i, new THREE.DDSLoader() );
 ////////////////////// Ladda in alla län ////////////////////////
 var loader_array = [];
 var material_array = [];
+var mesh_array = [];
 
 
 for(var id = 1; id < 25; id++){
 
 	var material = new THREE.MeshLambertMaterial( {color: 0x3344aa} );
 	material_array.push(material);
+}
+
+for(var id = 1; id < 23; id++){
+
+	var meshObject = new THREE.Object3D;
+	mesh_array.push(meshObject);
+	sweden.add(meshObject);
 }
 
 for(var id = 1; id < 22; id++){
