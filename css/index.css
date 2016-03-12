@@ -4,6 +4,8 @@ body{
 	background: rgba(255, 255, 255, 0.8);
 }
 
+
+
 #background{
 	z-index: -1;
 	position: fixed;
@@ -23,6 +25,13 @@ body{
 	overflow-y:scroll;
 }
 
+#markerat_lan_title{
+	position: fixed;
+	color: white;
+	margin:0px;
+	padding:0px;
+	left:400px;
+}
 
 #container3D {
 	visibility: visible;
@@ -54,10 +63,17 @@ body{
 #columnChartJobb{
 	width: 140px; 
 	height: 250px;
+	padding-left: 20px;
+	padding-top: 20px;
 	margin: 0 auto;
 	float: left;
 }
- 
+#barChart{
+ 	width: 400px; 
+ 	height: 400px; 
+ 	margin: 0 auto;
+ }
+
 .highcharts-background{
 	fill: rgba(255, 255, 255, 0.0);
 }
@@ -66,4 +82,5 @@ tspan{
 	font-size: 10px;
 	line-height: 0.5;
 }
+
 
