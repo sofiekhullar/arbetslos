@@ -22,6 +22,7 @@ scene.add(sceneGraph);
 EventsControls.attachEvent( 'onclick', function() {
 	console.log(this.focused.name);
 	activeLan = this.focused.name;
+	SELECTED_LAN_INDEX = getLan(SELECTED_LAN_ID);
 });
 
 EventsControls.attachEvent( 'mouseOver', function() {

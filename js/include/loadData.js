@@ -17,7 +17,6 @@ function loadData() {
 	});
 
 	$.getJSON("json/lediga_jobb_per_lan.json", function(json) {
-		console.log(json);
 		loadLedigajobb(json);
 		loadRiketVarden();
 	});
@@ -185,7 +184,6 @@ function loadRiketVarden() {
 		getLan(-1).n_unga_kvinnor_arbetslosa += alla_lan[i].n_unga_kvinnor_arbetslosa; 
 
 	}
-	console.log(alla_lan)
 	
 }
 
