@@ -19,6 +19,7 @@ function createCharts() {
               },
             plotOptions: {
                 pie: {
+                    animation: false,
                     allowPointSelect: true,
                     cursor: 'pointer',
                     dataLabels: {
@@ -62,6 +63,7 @@ function createCharts() {
               },
             plotOptions: {
                 pie: {
+                    animation: false,
                     allowPointSelect: true,
                     cursor: 'pointer',
                     dataLabels: {
@@ -84,11 +86,11 @@ function createCharts() {
                 }]
             }]
         });
-console.log(getLan(SELECTED_LAN_ID).n_unga_kvinnor_arbetslosa);
 
 // Skapa stapel diagram för personer 
 $('#columnChartArbetslosa').highcharts({
         chart: {
+            animation: false,
             type: 'column'
         },
             credits: {
@@ -121,6 +123,7 @@ $('#columnChartArbetslosa').highcharts({
         },
         plotOptions: {
             column: {
+                animation: false,
                 pointPadding: 0.2,
                 borderWidth: 0
             }
@@ -144,6 +147,7 @@ $('#columnChartArbetslosa').highcharts({
 // Skapa antal lediga jobb diagram
 $('#columnChartJobb').highcharts({
         chart: {
+            animation: false,
             type: 'column'
         },
             credits: {
@@ -174,6 +178,7 @@ $('#columnChartJobb').highcharts({
         },
         plotOptions: {
             column: {
+                animation: false,
                 pointPadding: 0.2,
                 borderWidth: 0
             }
