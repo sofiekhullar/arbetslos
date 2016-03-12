@@ -194,5 +194,5 @@ $('#columnChartJobb').highcharts({
             data: [getLan(SELECTED_LAN_ID).n_platsannonser]
             }]
     });
-    }
+}
 

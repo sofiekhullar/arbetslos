@@ -36,6 +36,8 @@ EventsControls.attachEvent( 'onclick', function() {
 	
 	createCharts();
 	createCharts2();
+	createCharts3();
+
 	document.getElementById("markerat_lan_title").innerHTML = getLan(SELECTED_LAN_ID).namn;
 	
 });
