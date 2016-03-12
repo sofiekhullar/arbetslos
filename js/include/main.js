@@ -19,6 +19,10 @@ scene.add(sceneGraph);
 
 
 EventsControls.attachEvent( 'onclick', function() {
+
+	console.log(this.focused.name);
+	activeLan = this.focused.name;
+	
 	activeLan = parseInt(this.focused.name);
 
 	var temp = SELECTED_LAN_ID;
@@ -30,13 +34,13 @@ EventsControls.attachEvent( 'onclick', function() {
 	document.getElementById("markerat_lan_title").innerHTML = getLan(SELECTED_LAN_ID).namn;
 
 
-
 	if(SELECTED_LAN_ID == temp){
 		SELECTED_LAN_ID = -1;
 		activeLan = 22;
 	}
 	
 	createCharts();
+	createCharts2();
 	
 });
 
