@@ -129,16 +129,16 @@ function loadArbetsloshet(json){
 				alla_lan[j].n_unga_arbetslosa =
 					json.Blad1[i].ung_total/100 * alla_lan[j].ung_befolkning ;
 
-				alla_lan[j].n_unga_arbetslosa =
+				alla_lan[j].n_unga_kvinnor_arbetslosa =
 					json.Blad1[i]["ung_män"]/100 * alla_lan[j].ung_befolkning/2;
 				
-				alla_lan[j].n_unga_arbetslosa =
+				alla_lan[j].n_unga_man_arbetslosa =
 					json.Blad1[i].ung_kvinnor/100 * alla_lan[j].ung_befolkning/2;
 
 			}
 		}
 	}
-	
+	console.log(alla_lan);
 }
 
 
