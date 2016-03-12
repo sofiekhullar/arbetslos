@@ -1,7 +1,7 @@
     $(document).ready(function () {
 
         // Build the chart
-        $('#pieChartTot').highcharts({
+        $('#pieChartTotalt').highcharts({
             chart: {
                 plotBackgroundColor: null,
                 plotBorderWidth: null,
@@ -9,7 +9,7 @@
                 type: 'pie'
             },
             title: {
-                text: 'Fördelning totalt arbetslösa'
+                text: 'Totalt arbetslösa'
             },
             tooltip: {
                 pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
@@ -44,7 +44,7 @@
     
 
      // Build the chart
-        $('#pieChartUng').highcharts({
+        $('#pieChartUnga').highcharts({
             chart: {
                 plotBackgroundColor: null,
                 plotBorderWidth: null,
@@ -52,7 +52,7 @@
                 type: 'pie'
             },
             title: {
-                text: 'Fördelning av unga arbetslösa'
+                text: 'Unga arbetslösa'
             },
             tooltip: {
                 pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
@@ -85,7 +85,7 @@
             }]
         });
 
-$('#columnChart').highcharts({
+$('#columnChartArbetslosa').highcharts({
         chart: {
             type: 'column'
         },

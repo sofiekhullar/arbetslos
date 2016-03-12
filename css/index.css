@@ -4,14 +4,6 @@ body{
 	background: rgba(255, 255, 255, 0.8);
 }
 
-text.highcharts-title{
-	font-size: 5px;
-}
-
-tspan{
-	font-size: 5px;
-}
-
 #background{
 	z-index: -1;
 	position: fixed;
@@ -41,18 +33,18 @@ tspan{
 	width: 100%;
 }
 
-#pieChartTot{
+#pieChartTotalt{
     height: 200px;
     width: 150px;
     float: left;
 }
 
-#pieChartUng{
+#pieChartUnga{
 	height: 200px;
 	width: 150px;
     float: left;
 }
-#columnChart{
+#columnChartArbetslosa{
 	width: 350px; 
 	height: 200px;
 	margin: 0 auto;
