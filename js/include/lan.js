@@ -6,7 +6,7 @@ var lan = function(namn, id, total_befolkning) {
  
 	this.mesh = new THREE.Object3D;
 
-	this.ung_befolkning; //18-24
+	this.ung_befolkning = 0; //18-24
 
 	this.n_man_studieskuld = 0;
 	this.n_kvinnor_studieskuld = 0;
@@ -57,6 +57,7 @@ function init_lan() {
 	alla_lan.push(new lan("Västra Götalands län", 14, 1648682));
 	alla_lan.push(new lan("Örebro län", 18, 291012));
 	alla_lan.push(new lan("Östergötlands län", 5, 445661));
+	alla_lan.push(new lan("Riket", -1, 9851017));
 
 }
 

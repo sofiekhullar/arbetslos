@@ -17,7 +17,9 @@ function loadData() {
 	});
 
 	$.getJSON("json/lediga_jobb_per_lan.json", function(json) {
+		console.log(json);
 		loadLedigajobb(json);
+		loadRiketVarden();
 	});
 }
 
@@ -150,6 +152,41 @@ function loadLedigajobb(json) {
 		getLan(lan_id).n_lediga_jobb = parseInt(json.soklista.sokdata[i].antal_ledigajobb);
 		getLan(lan_id).n_platsannonser = parseInt(json.soklista.sokdata[i].antal_platsannonser);
 	}
+}
+
+function loadRiketVarden() {
+
+	for(i = 0; i < 21; i++) {
+
+		getLan(-1).ung_befolkning += alla_lan[i].ung_befolkning; 
+
+		getLan(-1).n_man_studieskuld += alla_lan[i].n_man_studieskuld; 
+		getLan(-1).n_kvinnor_studieskuld += alla_lan[i].n_kvinnor_studieskuld; 
+		getLan(-1).studieskuld_man += alla_lan[i].studieskuld_man; 
+		getLan(-1).studieskuld_kvinnor += alla_lan[i].studieskuld_kvinnor; 
+
+		getLan(-1).m = 23.3;
+		getLan(-1).c = 6.1;
+		getLan(-1).fp = 5.4;
+		getLan(-1).kd = 4.6;
+		getLan(-1).mp = 6.9;
+		getLan(-1).s = 31;
+		getLan(-1).v = 5.7;
+		getLan(-1).sd = 12.9;
+
+		getLan(-1).n_lediga_jobb += alla_lan[i].n_lediga_jobb; 
+		getLan(-1).n_platsannonser += alla_lan[i].n_platsannonser; 
+
+		getLan(-1).n_totalt_arbetslosa += alla_lan[i].n_totalt_arbetslosa; 
+		getLan(-1).n_kvinnor_arbetslosa += alla_lan[i].n_kvinnor_arbetslosa; 
+		getLan(-1).n_man_arbetslosa += alla_lan[i].n_man_arbetslosa; 
+		getLan(-1).n_unga_arbetslosa += alla_lan[i].n_unga_arbetslosa; 
+		getLan(-1).n_unga_man_arbetslosa += alla_lan[i].n_unga_man_arbetslosa; 
+		getLan(-1).n_unga_kvinnor_arbetslosa += alla_lan[i].n_unga_kvinnor_arbetslosa; 
+
+	}
+	console.log(alla_lan)
+	
 }
 
 

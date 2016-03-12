@@ -1,6 +1,7 @@
 //Skapa lista med län och initiera denna.
 var alla_lan = [];
 init_lan();
+var SELECTED_LAN_INDEX = -1;
 
 //Load json files
 loadData();
