@@ -17,7 +17,10 @@ var camera = new THREE.PerspectiveCamera( 60, window.innerWidth/window.innerHeig
 camera.position.z = 7;
 camera.position.y = 17;
 camera.position.x = -17;
+camera.lookAt( new THREE.Vector3( 0, -0, 0 ) );
+
 scene.add(camera);
+
 
 var sceneGraph = new THREE.Object3D;
 var sweden = new THREE.Object3D;
@@ -29,10 +32,6 @@ var lan = {
 		  'namn' : "saknas"
 
 		}
-
-
-
-
 
 
 
