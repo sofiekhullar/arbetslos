@@ -21,6 +21,7 @@ scene.add(sceneGraph);
 EventsControls.attachEvent( 'onclick', function() {
 	console.log(this.focused.name);
 	activeLan = this.focused.name;
+	console.log("id", selectedId(activeLan));
 });
 
 EventsControls.attachEvent( 'mouseOver', function() {
