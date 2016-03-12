@@ -6,6 +6,8 @@ var lan = function(namn, id, total_befolkning) {
  
 	this.mesh = new THREE.Object3D;
 
+	this.ung_befolkning; //18-24
+
 	this.n_man_studieskuld = 0;
 	this.n_kvinnor_studieskuld = 0;
 	this.studieskuld_man = 0;

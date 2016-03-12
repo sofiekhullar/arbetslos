@@ -31,8 +31,6 @@ tspan{
 }
 
 
-}
-
 #container3D {
 	visibility: visible;
 	z-index: -1;
@@ -41,10 +39,28 @@ tspan{
 	left: 0;
 	height: 100%;
 	width: 100%;
-
 }
 
+#pieChartTot{
+    height: 200px;
+    width: 150px;
+    float: left;
+}
+
+#pieChartUng{
+	height: 200px;
+	width: 150px;
+    float: left;
+}
 .highcharts-background{
 	fill: rgba(255, 255, 255, 0.0);
 }
 
+tspan{
+	font-size: 10px;
+	line-height: 0.5;
+}
+
+.highcharts-title{
+		line-height: 0.5;
+}

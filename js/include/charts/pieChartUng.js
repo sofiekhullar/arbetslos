@@ -1,18 +1,15 @@
     $(document).ready(function () {
 
         // Build the chart
-        $('#pieChart').highcharts({
+        $('#pieChartUng').highcharts({
             chart: {
                 plotBackgroundColor: null,
                 plotBorderWidth: null,
                 plotShadow: false,
-                backgroundColor: 'rgba(0,0,0,0)',
-                width: null,
-                height: null,
                 type: 'pie'
             },
             title: {
-                text: 'Fullt ös arbetslös'
+                text: 'Fördelning av unga arbetslösa'
             },
             tooltip: {
                 pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
