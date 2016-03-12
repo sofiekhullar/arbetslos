@@ -9,7 +9,9 @@
         xAxis: {
             categories: ['Personer med studieskuld', 'Studieskuld i kronor', 'Arbetslösa alla åldrar', 'Unga arbetslösa']
         },
-
+        credits: {
+            enabled: false
+        },
         yAxis: {
             min: 0,
             title: {
