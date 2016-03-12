@@ -15,6 +15,10 @@ function loadData() {
 	$.getJSON("json/arbetslosa.json", function(json) {
 		loadArbetsloshet(json);
 	});
+
+	$.getJSON("json/lediga_jobb_per_lan.json", function(json) {
+		loadLedigajobb(json);
+	});
 }
 
 function loadUngdomar(dataset){
@@ -129,16 +133,23 @@ function loadArbetsloshet(json){
 				alla_lan[j].n_unga_arbetslosa =
 					json.Blad1[i].ung_total/100 * alla_lan[j].ung_befolkning ;
 
-				alla_lan[j].n_unga_arbetslosa =
+				alla_lan[j].n_unga_kvinnor_arbetslosa =
 					json.Blad1[i]["ung_män"]/100 * alla_lan[j].ung_befolkning/2;
 				
-				alla_lan[j].n_unga_arbetslosa =
+				alla_lan[j].n_unga_man_arbetslosa =
 					json.Blad1[i].ung_kvinnor/100 * alla_lan[j].ung_befolkning/2;
 
 			}
 		}
 	}
-	
+}
+
+function loadLedigajobb(json) {
+	for(i = 0; i < 21; i++) {
+		var lan_id = parseInt(json.soklista.sokdata[i].id);
+		getLan(lan_id).n_lediga_jobb = parseInt(json.soklista.sokdata[i].antal_ledigajobb);
+		getLan(lan_id).n_platsannonser = parseInt(json.soklista.sokdata[i].antal_platsannonser);
+	}
 }
 
 
