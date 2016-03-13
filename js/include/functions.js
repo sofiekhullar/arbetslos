@@ -38,3 +38,9 @@ function getCurrentTime(){
 	return new Date()/300;
 }
 
+function moveLan(diff_time, move_time, start, goal){
+
+	var distance = goal - start;
+	return ((Math.cos(Math.PI/move_time*(diff_time - move_time))+1)*0.5)*distance + start;
+}
+

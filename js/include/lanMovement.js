@@ -2,6 +2,7 @@ function vis1(){
 	console.log("Totalt arbetslösa");
 	start_time = new Date()/300;
 	VILKEN_KNAPP = 1;
+	
 }
 
 function vis2(){

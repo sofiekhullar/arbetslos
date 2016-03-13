@@ -59,12 +59,15 @@ sweden.scale.set(1,3,1);
 camera.up = new THREE.Vector3(0,1,0);
 camera.lookAt(new THREE.Vector3(0,1,10));
 
-for(var lan = 0; lan < 21; lan++){
-	alla_lan[lan].mesh = mesh_array[lan];
+for(var lan = 1; lan < 22; lan++){
+	getLan(selectedId(lan)).mesh = mesh_array[lan];
 }
 
 start_time = getCurrentTime;
 var diff_time = getCurrentTime;
+var move_time = 1.0;
+
+
 
 
 var render = function () {
@@ -73,28 +76,37 @@ var render = function () {
 	time = getCurrentTime();
 	diff_time = time - start_time;
 
-	if(diff_time < 2.0){
+
+	if(diff_time < move_time){
 
 		switch(VILKEN_KNAPP) {
 		    case 1:
-		        alla_lan[1].mesh.position.y = (Math.cos(Math.PI/2*(diff_time - 2))+1)*0.5;
-		        break;
+			    for(var lan = 0; lan < 21; lan++){
+		        	alla_lan[lan].mesh.position.y = moveLan(diff_time, move_time, alla_lan[lan].current_mesh_position, alla_lan[lan].n_totalt_arbetslosa/100000);
+				}
+		       	break;
 		    case 2:
-		        alla_lan[2].mesh.position.y = (Math.cos(Math.PI/2*(diff_time - 2))+1)*0.5;
+		        for(var lan = 0; lan < 21; lan++){
+		        	alla_lan[lan].mesh.position.y = moveLan(diff_time, move_time, alla_lan[lan].current_mesh_position, alla_lan[lan].n_unga_arbetslosa/100000);
+				}
 		        break;
 		    case 3:
-		        alla_lan[3].mesh.position.y = (Math.cos(Math.PI/2*(diff_time - 2))+1)*0.5;
+		        for(var lan = 0; lan < 21; lan++){
+		        	alla_lan[lan].mesh.position.y = moveLan(diff_time, move_time, alla_lan[lan].current_mesh_position, (alla_lan[lan].n_man_studieskuld + alla_lan[lan].n_kvinnor_studieskuld)/100000);
+				}
 		        break;
 		    case 4:
-		        alla_lan[4].mesh.position.y = (Math.cos(Math.PI/2*(diff_time - 2))+1)*0.5;
+		        alla_lan[4].mesh.position.y = moveLan(diff_time, move_time, 0, 1);
 		        break;
 		    default:
 		        console.log("vad vill du");
 		}
-
-
-		
+	}else{
+		for(var lan = 0; lan < 21; lan++){
+        	alla_lan[lan].current_mesh_position = alla_lan[lan].mesh.position.y;
+		}
 	}
+
 	//alla_lan[20].mesh.position.y= Math.sin(time);
 
 	//camera.position.y = Math.sin(10*time) + 17;

@@ -32,6 +32,8 @@ var lan = function(namn, id, total_befolkning) {
 	this.n_unga_kvinnor_arbetslosa = 0;
 	this.n_unga_man_arbetslosa = 0
 
+	this.current_mesh_position = 0;
+
 };
 
 function init_lan() {
