@@ -12,7 +12,11 @@ var IS_MOUSE_DOWN = false;
 var start_time = 0;
 var VILKEN_KNAPP = 9;
 var TEMP_COLOR = 0;
+var TEMP_COLOR2 = 0;
 var BUTTON_PRESSED_OPACITY = 0.5;
+var BUTTON_UNPRESSED_OPACITY = 0.8;
+
+
 
 
 
@@ -36,7 +40,7 @@ var A_light = new THREE.AmbientLight( 0xaaaaaa ); // soft white light
 sceneGraph.add( A_light );
 
 var light = new THREE.DirectionalLight( 0x333333,0.8 );
-light.position.set( 20, 20, -20 ).normalize();
+light.position.set( 20, -5, -20 ).normalize();
 sceneGraph.add(light);
 
 

@@ -38,7 +38,6 @@ function onDocumentMouseMove( event ){
 		sceneGraph.rotation.x += (mouse.x - old_mouse_x)*3;
 	}
 
-	console.log(sceneGraph.rotation)
 	old_mouse_x = mouse.x;
 	old_mouse_y = mouse.y;
 

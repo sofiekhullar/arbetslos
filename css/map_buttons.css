@@ -22,17 +22,7 @@
     opacity: 1;
 }
 
-.btn_map_vis:target {
-    background-color: #ffffff;
-    color: #23527c;
-    opacity: 0.3;
-}
 
-.btn_map_vis:active {
-    background-color: #ffffff;
-    color: #23527c;
-    opacity: 0.1;
-}
 
 #btn_map_1{
 	top: 5px;
@@ -42,16 +32,16 @@
 	top: 50px;
 }
 
-#btn_map_3{
+#btn_map_5{
 	top: 95px;
+}
+
+#btn_map_3{
+	top: 140px;
 }
 
 #btn_map_4{
 	top: 185px;
-}
-
-#btn_map_5{
-	top: 140px;
 }
 
 #btn_map_6{
@@ -68,4 +58,5 @@
 
 #btn_map_9{
 	top: 365px;
+	opacity: 1.0;
 }

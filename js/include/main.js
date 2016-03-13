@@ -20,11 +20,17 @@ sceneGraph.add(sweden);
 scene.add(sceneGraph);
 
 
+
 EventsControls.attachEvent( 'onclick', function() {
 
-	activeLan = this.focused.name;
+	if(this.focused.name == 'jurassic_plane'){
+		activeLan = 22;
+	}else{	
+		activeLan = this.focused.name;
+		activeLan = parseInt(this.focused.name);
+	}
+
 	
-	activeLan = parseInt(this.focused.name);
 
 	var temp = SELECTED_LAN_ID;
 	SELECTED_LAN_ID = selectedId(activeLan);
@@ -61,11 +67,11 @@ EventsControls.attachEvent( 'mouseOver', function() {
     	this.mouseOvered.scale.set(1,1.1,1);
 		
 
-
 		document.getElementById("hover_lan_title").innerHTML = getLan(selectedId(this.mouseOvered.name)).namn ;
 		document.getElementById("hover_lan_title").style.left = String(parseInt(((mouse.x + 0.5) * window.innerWidth)) + 15) + "px";
 		document.getElementById("hover_lan_title").style.top = String(parseInt(((mouse.y + 0.5) * window.innerHeight))) + "px";
 
+	
 });
 
 EventsControls.attachEvent( 'mouseMove', function() {
@@ -108,6 +114,7 @@ for(var lan = 1; lan < 22; lan++){
 
 for(var lan = 1; lan < 22; lan++){
 	getLan(selectedId(lan)).material = material_array[lan];
+	getLan(selectedId(lan)).material.color.setRGB(1,1,1);			
 }
 
 start_time = getCurrentTime;
@@ -116,11 +123,11 @@ var move_time = 1.0;
 
 var render = function () {
 
-	if(VILKEN_KNAPP == 9){
+	/*if(VILKEN_KNAPP == 9){
 		for(var lan = 1; lan < 22; lan++){
 			material_array[lan].color.setRGB(1, 1, 1);
 		}
-	}
+	}*/
 	
 
 	time = getCurrentTime();
@@ -208,6 +215,12 @@ var render = function () {
 			case 9: // NOLLSTÄLL
 		    	for(var lan = 0; lan < 21; lan++){
 		        	alla_lan[lan].mesh.position.y = moveLan(diff_time, move_time, alla_lan[lan].current_mesh_position, 0);
+		        	var color = alla_lan[lan].material.color;
+		        	var franR = moveLan(diff_time, move_time, color.r, 1);
+		        	var franG = moveLan(diff_time, move_time, color.g, 1);
+		        	var franB = moveLan(diff_time, move_time, color.b, 1);
+					alla_lan[lan].material.color.setRGB(franR, franG, franB);	
+
 		       	}
 		        break;
 		    default:
@@ -225,7 +238,9 @@ var render = function () {
 
 	
 
-		material_array[activeLan].color.setRGB(0.4,0.5,1.0);
+		material_array[activeLan].color.setRGB(0.4,0.9,1.0);
+		//material_array[activeLan].color.setRGB(0.2,0.7,0.2);
+		//material_array[activeLan].color.setHex(0xcef9b8);
 	
 
 	requestAnimationFrame( render );
