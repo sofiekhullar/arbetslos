@@ -153,6 +153,11 @@ var render = function () {
 		        	alla_lan[lan].mesh.position.y = moveLan(diff_time, move_time, alla_lan[lan].current_mesh_position, (alla_lan[lan].n_kvinnor_studieskuld - alla_lan[lan].n_man_studieskuld)/10000);
 		       	}
 		        break;
+			case 9: // Jmfr antal med studieskuld
+		    	for(var lan = 0; lan < 21; lan++){
+		        	alla_lan[lan].mesh.position.y = moveLan(diff_time, move_time, alla_lan[lan].current_mesh_position, 0);
+		       	}
+		        break;
 		    default:
 		        console.log("vad vill du");
 		}
