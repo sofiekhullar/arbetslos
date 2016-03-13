@@ -4,6 +4,9 @@ function createCharts3() {
 	 // Skapa cirkeldiagram för totalt antal arbetslösa
         test = $('#pieChartParti').highcharts({
             chart: {
+                style: {
+                    fontFamily: 'Helvetica'
+                },
                 plotBackgroundColor: null,
                 plotBorderWidth: null,
                 plotShadow: false,

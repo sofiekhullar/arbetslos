@@ -1,6 +1,9 @@
     function createCharts2() {
     $('#barChart').highcharts({
         chart: {
+        style: {
+                fontFamily: 'Helvetica'
+        },
             type: 'bar'
         },
         title: {
