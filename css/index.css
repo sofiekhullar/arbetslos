@@ -3,6 +3,17 @@ body{
 	overflow: hidden;
 	background: rgba(255, 255, 255, 0.8);
 }
+h3 {
+    text-align: center;
+}
+p{
+	padding-left: 20px;
+	padding-right: 20px;
+	font-size: 18px;
+}
+.list{
+	padding-left: 100px;
+}
 
 #background{
 	z-index: -1;
@@ -31,6 +42,16 @@ body{
 	left:400px;
 }
 
+#hover_lan_title{
+	position: fixed;
+	color: white;
+	background: rgba(255, 255, 255, 0.2);
+	margin:0px;
+	padding:0px;
+	z-index: 10;
+}
+
+
 #container3D {
 	visibility: visible;
 	z-index: -1;
@@ -39,6 +60,7 @@ body{
 	left: 0;
 	height: 100%;
 	width: 100%;
+
 }
 
 #pieChartTotalt{
@@ -53,18 +75,17 @@ body{
     float: left;
 }
 #columnChartArbetslosa{
-	width: 240px; 
-	height: 250px;
+	width: 260px; 
+	height: 320px;
 	margin: 0 auto;
 	float: left;
 }
 #columnChartJobb{
-	width: 140px; 
-	height: 250px;
-	padding-left: 20px;
-	padding-top: 20px;
+	width: 170px; 
+	height: 295px;
 	margin: 0 auto;
 	float: left;
+	z-index: 1;
 }
 #pieChartParti{
 	width: 470px; 
@@ -84,9 +105,5 @@ body{
 	fill: rgba(255, 255, 255, 0.0);
 }
 
-tspan{
-	font-size: 10px;
-	line-height: 0.5;
-}
 
 
