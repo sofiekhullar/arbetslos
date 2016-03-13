@@ -30,11 +30,6 @@ var sweden = new THREE.Object3D;
 
 var activeLan = 22;
 
-var lan = {
-		  'namn' : "saknas"
-
-		}
-
 
 
 var A_light = new THREE.AmbientLight( 0xaaaaaa ); // soft white light

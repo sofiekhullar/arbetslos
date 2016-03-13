@@ -49,3 +49,5 @@ function moveLan(diff_time, move_time, start, goal){
 
 
 
+
+
