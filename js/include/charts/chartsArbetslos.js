@@ -109,6 +109,7 @@ $('#columnChartArbetslosa').highcharts({
         },
         yAxis: {
             min: 0,
+            max: 150000,
             title: {
                 text: 'Antal personer'
             }
@@ -116,7 +117,7 @@ $('#columnChartArbetslosa').highcharts({
         tooltip: {
             headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
             pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
-                '<td style="padding:0"><b>{point.y:.1f} Personer</b></td></tr>',
+                '<td style="padding:0"><b>{point.y:1f} pers</b></td></tr>',
             footerFormat: '</table>',
             shared: true,
             useHTML: true
@@ -165,13 +166,16 @@ $('#columnChartJobb').highcharts({
         yAxis: {
             min: 0,
             title: {
-                text: 'Antal'
+                text: 'Antal jobb'
             }
         },
         tooltip: {
+                positioner: function () {
+                return { x: 0, y: 0 };
+            },
             headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
             pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
-                '<td style="padding:0"><b>{point.y:.1f} mm</b></td></tr>',
+                '<td style="padding:0"><b>{point.y:1f} pers</b></td></tr>',
             footerFormat: '</table>',
             shared: true,
             useHTML: true

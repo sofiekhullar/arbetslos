@@ -1,7 +1,8 @@
 function createCharts3() {
 
+    //if(first) {
 	 // Skapa cirkeldiagram för totalt antal arbetslösa
-        $('#pieChartParti').highcharts({
+        test = $('#pieChartParti').highcharts({
             chart: {
                 plotBackgroundColor: null,
                 plotBorderWidth: null,
@@ -9,7 +10,7 @@ function createCharts3() {
                 type: 'pie'
             },
             title: {
-                text: 'Partisympati'
+                text: 'Valresultat'
             },
             tooltip: {
                 pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
@@ -22,54 +23,69 @@ function createCharts3() {
                     allowPointSelect: true,
                     cursor: 'pointer',
                     dataLabels: {
-                        enabled: false
-                    },
-                    showInLegend: true
+                        enabled: true,
+                        format: '<b>{point.name}</b>: {point.percentage:.1f} %'
+                    }
                 }
             },
+            animation: false,
             series: [{
                 name: 'Procentuellt',
                 colorByPoint: true,
                 data: [{
                     name: 'M',
                     color: '#33ccff',
-                    y: 4
+                    y: (getLan(SELECTED_LAN_ID).m)
                 },
                 {
                     name: 'C',
                     color: '#00b33c',
-                    y: 4
+                    y: (getLan(SELECTED_LAN_ID).c)
                 },
                 {
                     name: 'FP',
                     color: '#005ce6',
-                    y: 4
+                    y: (getLan(SELECTED_LAN_ID).fp)
                 },
                 {
                     name: 'KD',
                     color: '#0047b3',
-                    y: 4
+                    y: (getLan(SELECTED_LAN_ID).kd)
                 },
                 {
-                    name: 'P',
+                    name: 'MP',
                     color: '#9933ff',
-                    y: 4
+                    y: (getLan(SELECTED_LAN_ID).mp)
                 }, {
                     name: 'S',
                     color: '#ff5c33',
-                    y: 2
+                    y: (getLan(SELECTED_LAN_ID).s)
                 },
                 {
                     name: 'V',
                     color: '#ff0000',
-                    y: 4
+                    y: (getLan(SELECTED_LAN_ID).v)
                 },
                 {
                     name: 'SD',
                     color: '#ffff00',
-                    y: 4
+                    y: (getLan(SELECTED_LAN_ID).sd)
                 },]
             }]
         });
+        //first = false;
+    /*} else {
+
+        console.log("Hjsan");
+        console.log(test)
+        console.log($('pieChartParti').highcharts.series[0])
+
+        $('pieChartParti').change(function(){
+          // ...
+          chart.series[0].setData('M', '#33ccff', 50);
+          // ...
+          chart.redraw();
+        }
+    }*/
     
 }

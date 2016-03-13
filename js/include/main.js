@@ -3,6 +3,8 @@ var alla_lan = [];
 init_lan();
 var SELECTED_LAN_ID = -1;
 
+var first = true;
+
 //Load json files
 loadData();
 
@@ -29,6 +31,7 @@ EventsControls.attachEvent( 'onclick', function() {
 
 
 
+
 	if(SELECTED_LAN_ID == temp){
 		SELECTED_LAN_ID = -1;
 		activeLan = 22;
@@ -39,6 +42,9 @@ EventsControls.attachEvent( 'onclick', function() {
 	createCharts3();
 
 	document.getElementById("markerat_lan_title").innerHTML = getLan(SELECTED_LAN_ID).namn;
+	document.getElementById("markerat_lan_title_h3").innerHTML = getLan(SELECTED_LAN_ID).namn;
+	document.getElementById("markerat_lan_title_h3_2").innerHTML = getLan(SELECTED_LAN_ID).namn;
+	document.getElementById("markerat_lan_title_h3_3").innerHTML = getLan(SELECTED_LAN_ID).namn;
 	
 });
 
@@ -46,12 +52,21 @@ EventsControls.attachEvent( 'mouseOver', function() {
     	this.mouseOvered.material.opacity = 0.8;
     	this.mouseOvered.scale.set(1,1.1,1);
 		this.mouseOvered.material.color.setHex(0x00ff00);
+
+		document.getElementById("hover_lan_title").innerHTML = getLan(selectedId(this.mouseOvered.name)).namn ;
+		document.getElementById("hover_lan_title").style.left = String(parseInt(((mouse.x + 1) * window.innerWidth)/2)) + "px";
+		document.getElementById("hover_lan_title").style.top = String(parseInt(((mouse.y + 1) * window.innerHeight)/2)) + "px";
+
+
 });
 
 EventsControls.attachEvent( 'mouseOut', function() {
     	this.mouseOvered.material.opacity = 1;
     	this.mouseOvered.scale.set(1,1,1);
 		this.mouseOvered.material.color.setHex(0xffffff);
+
+		document.getElementById("hover_lan_title").style.left = -100 + "px";
+		document.getElementById("hover_lan_title").style.top = -100 + "px";
 });
 
 
