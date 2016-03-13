@@ -36,11 +36,11 @@ function createCharts() {
                 colorByPoint: true,
                 data: [{
                     name: 'Kvinnor',
-                    color: '#ff4d4d',
+                    color: '#ff8080',
                     y: getLan(SELECTED_LAN_ID).n_kvinnor_arbetslosa
                 }, {
                     name: 'Män',
-                    color: '#0066ff',
+                    color: '#33adff',
                     y: getLan(SELECTED_LAN_ID).n_man_arbetslosa
                 }]
             }]
@@ -83,11 +83,11 @@ function createCharts() {
                 colorByPoint: true,
                 data: [{
                     name: 'Kvinnor',
-                    color: '#ff4d4d',
+                    color: '#ff8080',
                     y: getLan(SELECTED_LAN_ID).n_unga_kvinnor_arbetslosa
                 }, {
                     name: 'Män',
-                    color: '#0066ff',
+                    color: '#33adff',
                     y: getLan(SELECTED_LAN_ID).n_unga_man_arbetslosa
                 }]
             }]
@@ -139,14 +139,14 @@ $('#columnChartArbetslosa').highcharts({
         },
         series: [{
             name: 'Kvinnor',
-            color: '#ff4d4d',
+            color: '#ff8080',
             data: [getLan(SELECTED_LAN_ID).n_kvinnor_arbetslosa,
                     getLan(SELECTED_LAN_ID).n_unga_kvinnor_arbetslosa,
                     getLan(SELECTED_LAN_ID).n_kvinnor_studieskuld]
 
         }, {
             name: 'Män',
-            color: '#0066ff',
+            color: '#33adff',
             data: [getLan(SELECTED_LAN_ID).n_man_arbetslosa,
                     getLan(SELECTED_LAN_ID).n_unga_man_arbetslosa,
                     getLan(SELECTED_LAN_ID).n_man_studieskuld]
@@ -200,12 +200,12 @@ $('#columnChartJobb').highcharts({
         },
         series: [{
             name: 'Totalt',
-            color: '#00b300',
+            color: '#84e184',
             data: [getLan(SELECTED_LAN_ID).n_lediga_jobb]
 
         }, {
             name: 'Platsbanken',
-            color: '#008000',
+            color: '#53c653',
             data: [getLan(SELECTED_LAN_ID).n_platsannonser]
             }]
     });
