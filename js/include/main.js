@@ -40,6 +40,9 @@ EventsControls.attachEvent( 'onclick', function() {
 	createCharts3();
 
 	document.getElementById("markerat_lan_title").innerHTML = getLan(SELECTED_LAN_ID).namn;
+	document.getElementById("markerat_lan_title_h3").innerHTML = getLan(SELECTED_LAN_ID).namn;
+	document.getElementById("markerat_lan_title_h3_2").innerHTML = getLan(SELECTED_LAN_ID).namn;
+	document.getElementById("markerat_lan_title_h3_3").innerHTML = getLan(SELECTED_LAN_ID).namn;
 	
 });
 
