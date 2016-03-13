@@ -25,15 +25,22 @@ function onDocumentMouseUp( event ){
 	IS_MOUSE_DOWN = false;
 }
 
+var old_mouse_x;
+var old_mouse_y;
+
 function onDocumentMouseMove( event ){
 	mouse.x = (event.clientX - window.innerWidth/2)/window.innerWidth;
 	mouse.y = (event.clientY - window.innerHeight/2)/window.innerHeight;
 
+
 	if(IS_MOUSE_DOWN){
-		sceneGraph.rotation.y = 3*mouse.x - mouse.y*2;
-		sceneGraph.rotation.z = mouse.y/2;
-		sceneGraph.rotation.x = mouse.y*2.5;
+		sceneGraph.rotation.z -= (mouse.y - old_mouse_y)*2;
+		sceneGraph.rotation.x += (mouse.x - old_mouse_x)*3;
 	}
+
+	console.log(sceneGraph.rotation)
+	old_mouse_x = mouse.x;
+	old_mouse_y = mouse.y;
 
 }
 
