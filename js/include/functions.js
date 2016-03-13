@@ -49,3 +49,5 @@ function moveLan(diff_time, move_time, start, goal){
 	return ((Math.cos(Math.PI/move_time*(diff_time - move_time))+1)*0.5)*distance + start;
 }
 
+
+
