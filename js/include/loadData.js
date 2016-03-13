@@ -130,8 +130,6 @@ function loadCSN(dataset) {
 
 
 function loadArbetsloshet(json){
-	console.log(json)
-
 
 	for(i = 0; i < 21 ; i++) {
 		for(j = 0; j < 21; j++) {
@@ -156,11 +154,6 @@ function loadArbetsloshet(json){
 				
 				alla_lan[j].n_unga_man_arbetslosa =
 					parseInt(json.Blad1[i].ung_kvinnor/100 * alla_lan[j].ung_befolkning/2);
-
-					console.log(alla_lan[i].namn)
-					console.log(alla_lan[i].n_kvinnor_arbetslosa + alla_lan[i].n_man_arbetslosa - alla_lan[i].n_totalt_arbetslosa)
-					console.log(alla_lan[i].n_unga_kvinnor_arbetslosa + alla_lan[i].n_unga_man_arbetslosa - alla_lan[i].n_unga_arbetslosa)
-					//console.log(alla_lan[i].total_befolkning)
 
 			}
 		}
