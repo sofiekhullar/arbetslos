@@ -21,8 +21,8 @@ function loadData() {
 		loadRiketVarden();
 
 		createCharts();
-		createCharts2();
-		createCharts3();
+		//createCharts2();
+		//createCharts3();
 	});
 }
 
