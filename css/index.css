@@ -64,18 +64,17 @@ p{
     float: left;
 }
 #columnChartArbetslosa{
-	width: 240px; 
-	height: 250px;
+	width: 260px; 
+	height: 320px;
 	margin: 0 auto;
 	float: left;
 }
 #columnChartJobb{
-	width: 140px; 
-	height: 250px;
-	padding-left: 20px;
-	padding-top: 20px;
+	width: 170px; 
+	height: 295px;
 	margin: 0 auto;
 	float: left;
+	z-index: 1;
 }
 #pieChartParti{
 	width: 470px; 
@@ -95,9 +94,5 @@ p{
 	fill: rgba(255, 255, 255, 0.0);
 }
 
-tspan{
-	font-size: 10px;
-	line-height: 0.5;
-}
 
 
