@@ -37,3 +37,8 @@ function vis8(){
 	start_time = new Date()/300;
 	VILKEN_KNAPP = 8;
 }
+
+function vis9(){
+	start_time = new Date()/300;
+	VILKEN_KNAPP = 9;
+}

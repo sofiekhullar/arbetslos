@@ -21,7 +21,10 @@
     color: #23527c;
     opacity: 1;
 }
-
+.btn_map_vis:active {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
 #btn_map_1{
 	top: 5px;
 }
@@ -52,4 +55,8 @@
 
 #btn_map_8{
 	top: 320px;
+}
+
+#btn_map_9{
+	top: 365px;
 }
