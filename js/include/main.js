@@ -254,7 +254,7 @@ var render = function () {
 		    	break;
 		    case 8: // Jmfr antal med studieskuld
 		    	for(var lan = 0; lan < 21; lan++){
-		        	alla_lan[lan].mesh.position.y = moveLan(diff_time, move_time, alla_lan[lan].current_mesh_position, (alla_lan[lan].n_kvinnor_studieskuld - alla_lan[lan].n_man_studieskuld)/10000);
+		        	alla_lan[lan].mesh.position.y = moveLan(diff_time, move_time, alla_lan[lan].current_mesh_position, (alla_lan[lan].n_kvinnor_studieskuld - alla_lan[lan].n_man_studieskuld)/30000);
 		       		var color = alla_lan[lan].mesh.position.y*2;
 		       		if(color > 0){
 		       			//RÖD
