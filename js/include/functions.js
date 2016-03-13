@@ -8,6 +8,7 @@ function onWindowResize() {
 	camera.aspect = window.innerWidth / window.innerHeight;
 	camera.updateProjectionMatrix();
 	renderer.setSize( window.innerWidth, window.innerHeight );
+	
 }
 
 function onDocumentMouseDown( event ) {
@@ -17,6 +18,9 @@ function onDocumentMouseDown( event ) {
 		IS_MOUSE_DOWN = true;
 		event.preventDefault();
 	}
+
+	document.getElementById('markerat_lan_title').style.left = String(parseInt((window.innerWidth - 500)/2 - document.getElementById('markerat_lan_title').offsetWidth/2)) + "px";
+	console.log(document.getElementById('markerat_lan_title').offsetWidth);
 }
 
 function onDocumentMouseUp( event ){
