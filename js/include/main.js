@@ -111,7 +111,9 @@ var render = function () {
 				}
 		        break;
 		    case 4:
-		        alla_lan[4].mesh.position.y = moveLan(diff_time, move_time, 0, 1);
+		    	for(var lan = 0; lan < 21; lan++){
+		        	alla_lan[lan].mesh.position.y = moveLan(diff_time, move_time, alla_lan[lan].current_mesh_position, (alla_lan[lan].studieskuld_man + alla_lan[lan].studieskuld_kvinnor)/12000000000);
+		       	}
 		        break;
 		    default:
 		        console.log("vad vill du");
