@@ -62,13 +62,6 @@ EventsControls.attachEvent( 'mouseOver', function() {
 		
 
 
-		$(".btn_map_vis").click(function () {
-		    $(".btn_map_vis").slideToggle("slow");
-		    ($(".lan_title_class").text() === "+ Open menu") ? $(".lan_title_class").text("- Close menu") : $(".lan_title_class").text("+ Open menu");
-		});
-
-
-
 		document.getElementById("hover_lan_title").innerHTML = getLan(selectedId(this.mouseOvered.name)).namn ;
 		document.getElementById("hover_lan_title").style.left = String(parseInt(((mouse.x + 0.5) * window.innerWidth)) + 15) + "px";
 		document.getElementById("hover_lan_title").style.top = String(parseInt(((mouse.y + 0.5) * window.innerHeight))) + "px";
