@@ -44,6 +44,7 @@ EventsControls.attachEvent( 'onclick', function() {
 	createCharts();
 	createCharts2();
 	createCharts3();
+	
 	if(VILKEN_KNAPP == 1){vis1();}
 	if(VILKEN_KNAPP == 2){vis2();}
 	if(VILKEN_KNAPP == 3){vis3();}

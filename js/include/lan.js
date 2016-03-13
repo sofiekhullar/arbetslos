@@ -59,7 +59,7 @@ function init_lan() {
 	alla_lan.push(new lan("Västra Götalands län", 14, 1648682));
 	alla_lan.push(new lan("Örebro län", 18, 291012));
 	alla_lan.push(new lan("Östergötlands län", 5, 445661));
-	alla_lan.push(new lan("Riket", -1, 9851017));
+	alla_lan.push(new lan("Hela Sverige", -1, 9851017));
 
 }
 
