@@ -3,6 +3,9 @@ function createCharts() {
         // Skapa cirkeldiagram för totalt antal arbetslösa
         $('#pieChartTotalt').highcharts({
             chart: {
+                style: {
+                    fontFamily: 'Helvetica'
+                },
                 plotBackgroundColor: null,
                 plotBorderWidth: null,
                 plotShadow: false,
@@ -47,6 +50,9 @@ function createCharts() {
      // Skapa cirkeldiagram för totalt antal unga arbetslösa
         $('#pieChartUnga').highcharts({
             chart: {
+                style: {
+                    fontFamily: 'Helvetica'
+                },
                 plotBackgroundColor: null,
                 plotBorderWidth: null,
                 plotShadow: false,
@@ -90,6 +96,9 @@ function createCharts() {
 // Skapa stapel diagram för personer 
 $('#columnChartArbetslosa').highcharts({
         chart: {
+        style: {
+                fontFamily: 'Helvetica'
+                },
             animation: false,
             type: 'column'
         },
@@ -148,6 +157,9 @@ $('#columnChartArbetslosa').highcharts({
 // Skapa antal lediga jobb diagram
 $('#columnChartJobb').highcharts({
         chart: {
+            style: {
+                    fontFamily: 'Helvetica'
+        },
             animation: false,
             type: 'column'
         },
