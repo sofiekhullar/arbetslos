@@ -5,6 +5,7 @@ var lan = function(namn, id, total_befolkning) {
 	this.total_befolkning = total_befolkning;
  
 	this.mesh = new THREE.Object3D;
+	this.material = 0;
 
 	this.ung_befolkning = 0; //18-24
 
