@@ -32,14 +32,14 @@
         },
         series: [{
             name: 'Män',
-            color: '#0066ff',
+            color: '#33adff',
             data: [getLan(SELECTED_LAN_ID).n_man_studieskuld,
                     getLan(SELECTED_LAN_ID).studieskuld_man,
                     getLan(SELECTED_LAN_ID).n_man_arbetslosa,
                     getLan(SELECTED_LAN_ID).n_unga_man_arbetslosa]
         }, {
             name: 'Kvinnor',
-            color: '#ff4d4d',
+            color: '#ff8080',
             data: [getLan(SELECTED_LAN_ID).n_kvinnor_studieskuld,
                     getLan(SELECTED_LAN_ID).studieskuld_kvinnor,
                     getLan(SELECTED_LAN_ID).n_kvinnor_arbetslosa,

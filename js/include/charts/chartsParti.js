@@ -47,7 +47,7 @@ function createCharts3() {
                 },
                 {
                     name: 'FP',
-                    color: '#005ce6',
+                    color: '#3385ff',
                     y: (getLan(SELECTED_LAN_ID).fp)
                 },
                 {
@@ -57,21 +57,21 @@ function createCharts3() {
                 },
                 {
                     name: 'MP',
-                    color: '#9933ff',
+                    color: '#336600',
                     y: (getLan(SELECTED_LAN_ID).mp)
                 }, {
                     name: 'S',
-                    color: '#ff5c33',
+                    color: '#ff0000',
                     y: (getLan(SELECTED_LAN_ID).s)
                 },
                 {
                     name: 'V',
-                    color: '#ff0000',
+                    color: '#990000',
                     y: (getLan(SELECTED_LAN_ID).v)
                 },
                 {
                     name: 'SD',
-                    color: '#ffff00',
+                    color: '#ffc61a',
                     y: (getLan(SELECTED_LAN_ID).sd)
                 },]
             }]

@@ -132,6 +132,13 @@ document.getElementById('btn_map_8').onmouseover = function () {
 document.getElementById('btn_map_8').onmouseout = function () {
 	document.getElementById("hover_button_explanation").innerHTML = "";
 }
+
+document.getElementById('btn_map_9').onmouseover = function () {
+	document.getElementById("hover_button_explanation").innerHTML = "Återställer alla län till deras ursprungliga position.";
+}
+document.getElementById('btn_map_9').onmouseout = function () {
+	document.getElementById("hover_button_explanation").innerHTML = "";
+}
 //KLUMP STOP =======================================
 
 
@@ -207,6 +214,11 @@ var render = function () {
 		    case 8: // Jmfr antal med studieskuld
 		    	for(var lan = 0; lan < 21; lan++){
 		        	alla_lan[lan].mesh.position.y = moveLan(diff_time, move_time, alla_lan[lan].current_mesh_position, (alla_lan[lan].n_kvinnor_studieskuld - alla_lan[lan].n_man_studieskuld)/10000);
+		       	}
+		        break;
+			case 9: // Jmfr antal med studieskuld
+		    	for(var lan = 0; lan < 21; lan++){
+		        	alla_lan[lan].mesh.position.y = moveLan(diff_time, move_time, alla_lan[lan].current_mesh_position, 0);
 		       	}
 		        break;
 		    default:
