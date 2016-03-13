@@ -85,18 +85,22 @@ EventsControls.attachEvent( 'mouseOut', function() {
 });
 
 
-camera.position.z = 18;
-camera.position.y = 15;
-camera.position.x = -5;
-camera.lookAt( new THREE.Vector3( 0, -0, 0 ) );
+
+camera.position.z = -5;
+camera.position.y = -23;
+camera.position.x = 0;
+camera.lookAt( new THREE.Vector3( 0, 0, -5 ) );
 
 sweden.scale.set(1,3,1);
-sweden.rotation.y = -0.7;
-sweden.rotation.x = 0.4;
-sweden.rotation.z = -0.1;
+sweden.rotation.z = 3.14;
+sweden.rotation.y = -3.14/2;
+sweden.position.y = 1;
 
-camera.up = new THREE.Vector3(0,1,0);
-camera.lookAt(new THREE.Vector3(0,5,7));
+sceneGraph.rotation.x = -0.25;
+sceneGraph.rotation.z = 0.35;
+
+camera.up = new THREE.Vector3(0,0,-1);
+//camera.lookAt(new THREE.Vector3(0,5,7));
 
 for(var lan = 1; lan < 22; lan++){
 	getLan(selectedId(lan)).mesh = mesh_array[lan];
