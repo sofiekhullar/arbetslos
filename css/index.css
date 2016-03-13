@@ -69,25 +69,25 @@ p{
 }
 
 #pieChartTotalt{
-    height: 200px;
+    height: 180px;
     width: 230px;
     float: left;
 }
 
 #pieChartUnga{
-	height: 200px;
+	height: 180px;
 	width: 230px;
     float: left;
 }
 #columnChartArbetslosa{
 	width: 260px; 
-	height: 320px;
+	height: 300px;
 	margin: 0 auto;
 	float: left;
 }
 #columnChartJobb{
 	width: 170px; 
-	height: 295px;
+	height: 275px;
 	margin: 0 auto;
 	float: left;
 	z-index: 1;
