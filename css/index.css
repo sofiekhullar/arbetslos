@@ -56,6 +56,17 @@ p{
 	z-index: 10;
 }
 
+#hover_button_explanation{
+	position: fixed;
+	top: 400px;
+	color: white;
+	background: rgba(255, 255, 255, 0.0);
+	margin:10px;
+	padding:0px;
+	z-index: 10;
+	max-width: 180px;
+}
+
 
 #container3D {
 	visibility: visible;

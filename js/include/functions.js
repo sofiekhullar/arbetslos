@@ -19,8 +19,6 @@ function onDocumentMouseDown( event ) {
 		event.preventDefault();
 	}
 
-	document.getElementById('markerat_lan_title').style.left = String(parseInt((window.innerWidth - 500)/2 - document.getElementById('markerat_lan_title').offsetWidth/2)) + "px";
-	console.log(document.getElementById('markerat_lan_title').offsetWidth);
 }
 
 function onDocumentMouseUp( event ){
@@ -48,4 +46,6 @@ function moveLan(diff_time, move_time, start, goal){
 	var distance = goal - start;
 	return ((Math.cos(Math.PI/move_time*(diff_time - move_time))+1)*0.5)*distance + start;
 }
+
+
 
