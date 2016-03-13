@@ -109,6 +109,7 @@ $('#columnChartArbetslosa').highcharts({
         },
         yAxis: {
             min: 0,
+            max: 150000,
             title: {
                 text: 'Antal personer'
             }

@@ -3,6 +3,8 @@ var alla_lan = [];
 init_lan();
 var SELECTED_LAN_ID = -1;
 
+var first = true;
+
 //Load json files
 loadData();
 
