@@ -17,10 +17,7 @@ var VILKEN_KNAPP = 0;
 var scene = new THREE.Scene();
 //scene.fog = new THREE.FogExp2( 0xcccccc, 0.009 );
 var camera = new THREE.PerspectiveCamera( 60, window.innerWidth/window.innerHeight, 0.1, 1000 );
-camera.position.z = 7;
-camera.position.y = 17;
-camera.position.x = -17;
-camera.lookAt( new THREE.Vector3( 0, -0, 0 ) );
+
 
 scene.add(camera);
 

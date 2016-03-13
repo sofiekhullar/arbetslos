@@ -32,8 +32,9 @@ function onDocumentMouseMove( event ){
 	mouse.y = (event.clientY - window.innerHeight/2)/window.innerHeight;
 
 	if(IS_MOUSE_DOWN){
-		sceneGraph.rotation.y = mouse.x;
-		sceneGraph.rotation.z = mouse.y;
+		sceneGraph.rotation.y = 3*mouse.x - mouse.y*2;
+		sceneGraph.rotation.z = mouse.y/2;
+		sceneGraph.rotation.x = mouse.y*2.5;
 	}
 
 }
