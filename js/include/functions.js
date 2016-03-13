@@ -8,6 +8,7 @@ function onWindowResize() {
 	camera.aspect = window.innerWidth / window.innerHeight;
 	camera.updateProjectionMatrix();
 	renderer.setSize( window.innerWidth, window.innerHeight );
+	
 }
 
 function onDocumentMouseDown( event ) {
@@ -17,6 +18,9 @@ function onDocumentMouseDown( event ) {
 		IS_MOUSE_DOWN = true;
 		event.preventDefault();
 	}
+
+	document.getElementById('markerat_lan_title').style.left = String(parseInt((window.innerWidth - 500)/2 - document.getElementById('markerat_lan_title').offsetWidth/2)) + "px";
+	console.log(document.getElementById('markerat_lan_title').offsetWidth);
 }
 
 function onDocumentMouseUp( event ){
@@ -28,8 +32,9 @@ function onDocumentMouseMove( event ){
 	mouse.y = (event.clientY - window.innerHeight/2)/window.innerHeight;
 
 	if(IS_MOUSE_DOWN){
-		sceneGraph.rotation.y = mouse.x;
-		sceneGraph.rotation.z = mouse.y;
+		sceneGraph.rotation.y = 3*mouse.x - mouse.y*2;
+		sceneGraph.rotation.z = mouse.y/2;
+		sceneGraph.rotation.x = mouse.y*2.5;
 	}
 
 }
