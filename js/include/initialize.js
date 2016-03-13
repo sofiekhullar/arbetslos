@@ -10,7 +10,9 @@ var lan_array = [];
 var controls;
 var IS_MOUSE_DOWN = false;
 var start_time = 0;
-var VILKEN_KNAPP = 0;
+var VILKEN_KNAPP = 9;
+var TEMP_COLOR = 0;
+var BUTTON_PRESSED_OPACITY = 0.5;
 
 
 
