@@ -1,0 +1,22 @@
+.btn_map_vis{
+	position: fixed;
+	height: 50px;
+	margin: 5px;
+	padding: 5px;
+}
+
+#btn_map_1{
+	top: 0px;
+}
+
+#btn_map_2{
+	top: 55px;
+}
+
+#btn_map_3{
+	top: 110px;
+}
+
+#btn_map_4{
+	top: 165px;
+}

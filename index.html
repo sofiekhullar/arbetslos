@@ -10,6 +10,7 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 <link rel="stylesheet" type="text/css" href="css/index.css">
+<link rel="stylesheet" type="text/css" href="css/map_buttons.css">
 
 
 <!-- -External Libraries- -->
@@ -35,6 +36,7 @@
 <script src="js/include/lan.js"></script>
 <script src="js/include/loadModels.js"></script>
 <script src="js/include/loadData.js"></script>
+<script src="js/include/lanMovement.js"></script>
 
 <!-- -Load Charts- -->
 <script src="js/include/charts/chartsArbetslos.js"></script>
@@ -47,7 +49,16 @@
 <img src="images/background2.jpg" alt="background" id="background">
 
 <h1 id="markerat_lan_title">Riket</h1>
+
+
+<button id="btn_map_1" class="btn_map_vis" onclick="vis1()">Totalt arbetslösa</button>
+<button id="btn_map_2" class="btn_map_vis" onclick="vis2()">Unga arbetslösa</button>
+<button id="btn_map_3" class="btn_map_vis" onclick="vis3()">Personer med studieskuld</button>
+<button id="btn_map_4" class="btn_map_vis" onclick="vis4()">Total studieskuld</button>
+
+
 <div id="container3D"></div>
+    <div id="hover_lan_title"></div>
 
 <div class="containerMeny">
     <ul class="nav nav-tabs" id="myTab">

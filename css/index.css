@@ -42,6 +42,16 @@ p{
 	left:400px;
 }
 
+#hover_lan_title{
+	position: fixed;
+	color: white;
+	background: rgba(255, 255, 255, 0.2);
+	margin:0px;
+	padding:0px;
+	z-index: 10;
+}
+
+
 #container3D {
 	visibility: visible;
 	z-index: -1;
@@ -50,6 +60,7 @@ p{
 	left: 0;
 	height: 100%;
 	width: 100%;
+
 }
 
 #pieChartTotalt{
