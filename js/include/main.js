@@ -54,8 +54,16 @@ EventsControls.attachEvent( 'mouseOver', function() {
 		this.mouseOvered.material.color.setHex(0x00ff00);
 
 		document.getElementById("hover_lan_title").innerHTML = getLan(selectedId(this.mouseOvered.name)).namn ;
-		document.getElementById("hover_lan_title").style.left = String(parseInt(((mouse.x + 1) * window.innerWidth)/2)) + "px";
-		document.getElementById("hover_lan_title").style.top = String(parseInt(((mouse.y + 1) * window.innerHeight)/2)) + "px";
+		document.getElementById("hover_lan_title").style.left = String(parseInt(((mouse.x + 0.5) * window.innerWidth)) + 15) + "px";
+		document.getElementById("hover_lan_title").style.top = String(parseInt(((mouse.y + 0.5) * window.innerHeight))) + "px";
+
+
+
+});
+
+EventsControls.attachEvent( 'mouseMove', function() {
+	document.getElementById("hover_lan_title").style.left = String(parseInt(((mouse.x + 0.5) * window.innerWidth)) + 15) + "px";
+	document.getElementById("hover_lan_title").style.top = String(parseInt(((mouse.y + 0.5) * window.innerHeight))) + "px";
 
 
 });
@@ -65,6 +73,7 @@ EventsControls.attachEvent( 'mouseOut', function() {
     	this.mouseOvered.scale.set(1,1,1);
 		this.mouseOvered.material.color.setHex(0xffffff);
 
+		document.getElementById("hover_lan_title").innerHTML = "";
 		document.getElementById("hover_lan_title").style.left = -100 + "px";
 		document.getElementById("hover_lan_title").style.top = -100 + "px";
 });
