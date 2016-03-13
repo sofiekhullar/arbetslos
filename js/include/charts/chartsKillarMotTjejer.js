@@ -23,6 +23,7 @@
         },
         plotOptions: {
             series: {
+                animation: false,
                 stacking: 'percent'
             }
         },

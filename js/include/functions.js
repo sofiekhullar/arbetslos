@@ -33,3 +33,8 @@ function onDocumentMouseMove( event ){
 	}
 
 }
+
+function getCurrentTime(){
+	return new Date()/300;
+}
+

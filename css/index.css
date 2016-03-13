@@ -3,6 +3,17 @@ body{
 	overflow: hidden;
 	background: rgba(255, 255, 255, 0.8);
 }
+h3 {
+    text-align: center;
+}
+p{
+	padding-left: 20px;
+	padding-right: 20px;
+	font-size: 18px;
+}
+.list{
+	padding-left: 100px;
+}
 
 #background{
 	z-index: -1;
@@ -77,6 +88,14 @@ body{
 	margin: 0 auto;
 	float: left;
 }
+#pieChartParti{
+	width: 470px; 
+	height: 430px;
+	padding-left: 20px;
+	padding-top: 20px;
+	margin: 0 auto;
+}
+
 #barChart{
  	width: 400px; 
  	height: 400px; 

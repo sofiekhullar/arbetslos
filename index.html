@@ -10,6 +10,7 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 <link rel="stylesheet" type="text/css" href="css/index.css">
+<link rel="stylesheet" type="text/css" href="css/map_buttons.css">
 
 
 <!-- -External Libraries- -->
@@ -35,10 +36,12 @@
 <script src="js/include/lan.js"></script>
 <script src="js/include/loadModels.js"></script>
 <script src="js/include/loadData.js"></script>
+<script src="js/include/lanMovement.js"></script>
 
 <!-- -Load Charts- -->
 <script src="js/include/charts/chartsArbetslos.js"></script>
 <script src="js/include/charts/chartsKillarMottjejer.js"></script>
+<script src="js/include/charts/chartsParti.js"></script>
 
 </head>
 <body>
@@ -47,6 +50,13 @@
 
 <h1 id="markerat_lan_title">Riket</h1>
 
+
+<button id="btn_map_1" class="btn_map_vis" onclick="vis1()">Totalt arbetslösa</button>
+<button id="btn_map_2" class="btn_map_vis" onclick="vis2()">Unga arbetslösa</button>
+<button id="btn_map_3" class="btn_map_vis" onclick="vis3()">Personer med studieskuld</button>
+<button id="btn_map_4" class="btn_map_vis" onclick="vis4()">Total studieskuld</button>
+
+
 <div id="container3D"></div>
     <div id="hover_lan_title"></div>
 
@@ -54,25 +64,38 @@
     <ul class="nav nav-tabs" id="myTab">
         <li><a data-toggle="tab" href="#sectionA"><i class="fa fa-home fa-2x"></i></a></li>
         <li><a data-toggle="tab" href="#sectionB"><i class="fa fa-bar-chart fa-2x"></i></a></li>
-        <li><a data-toggle="tab" href="#dropdown1"><i class="fa fa-venus-mars fa-2x"></i></a></li>
+        <li><a data-toggle="tab" href="#sectionC"><i class="fa fa-venus-mars fa-2x"></i></a></li>
+        <li><a data-toggle="tab" href="#sectionD"><i class="fa fa-university fa-2x"></i></a></li>
             </ul>
         </li>
     </ul>
     <div class="tab-content">
         <div id="sectionA" class="tab-pane fade in active">
-            <h3>Välkommen</h3>
-            <p>Här ska det så en fin text och förklara syftet med denna fina sidan!</p>
+            <h3>Välkommen till BÄSTA SIDAN!</h3>
+            <p>Detta är ett verktyg för att visuallisera arbetslöshet i Sverige med hjälp av öppna data. Nagivera på sidan genom att klicka på de olika filkarna med iconer. I de olika flikarna finns:</p>
+            <br>
+            <div class="list">
+	            <p><i class="fa fa-bar-chart"></i> Arbetslösheten i Sverige</p>
+	            <p><i class="fa fa-venus-mars"></i> Skillnader mellan kvinnor och män</p>
+	            <p><i class="fa fa-university"></i> Politiksympati</p>
+        	</div>
+        	<br>
+        	<p>Den öppna datan är hämtad från Arbetsförmedlingen, Statistiska Centralbyrån och CSN.</p>
         </div>
         <div id="sectionB" class="tab-pane fade">
             <h3>Arbetslöshet</h3>
 			<div id="pieChartTotalt"></div>
 			<div id="pieChartUnga"></div>
 			<div id="columnChartArbetslosa"></div>
-			<div id="columnChartJobb"></div>
+			<div id="columnChartJobb"></div>			
         </div>
-        <div id="dropdown1" class="tab-pane fade">
+        <div id="sectionC" class="tab-pane fade">
             <h3>Killarna mot tjejerna</h3>
             <div id="barChart"></div>
+        </div>
+        <div id="sectionD" class="tab-pane fade">
+            <h3>Partisympati</h3>
+            <div id="pieChartParti"></div>
         </div>
        </div>
 
