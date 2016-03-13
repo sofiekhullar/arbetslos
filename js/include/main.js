@@ -95,44 +95,44 @@ var render = function () {
 	if(diff_time < move_time){
 
 		switch(VILKEN_KNAPP) {
-		    case 1:
+		    case 1: // Totalt arbetslösa
 			    for(var lan = 0; lan < 21; lan++){
 		        	alla_lan[lan].mesh.position.y = moveLan(diff_time, move_time, alla_lan[lan].current_mesh_position, alla_lan[lan].n_totalt_arbetslosa/100000);
 				}
 		       	break;
-		    case 2:
+		    case 2: // Unga arbetslösa
 		        for(var lan = 0; lan < 21; lan++){
 		        	alla_lan[lan].mesh.position.y = moveLan(diff_time, move_time, alla_lan[lan].current_mesh_position, alla_lan[lan].n_unga_arbetslosa/100000);
 				}
 		        break;
-		    case 3:
+		    case 3: // Personer med studieskuld
 		        for(var lan = 0; lan < 21; lan++){
 		        	alla_lan[lan].mesh.position.y = moveLan(diff_time, move_time, alla_lan[lan].current_mesh_position, (alla_lan[lan].n_man_studieskuld + alla_lan[lan].n_kvinnor_studieskuld)/100000);
 				}
 		        break;
-		    case 4:
+		    case 4: // Total studieskuld
 		    	for(var lan = 0; lan < 21; lan++){
 		        	alla_lan[lan].mesh.position.y = moveLan(diff_time, move_time, alla_lan[lan].current_mesh_position, (alla_lan[lan].studieskuld_man + alla_lan[lan].studieskuld_kvinnor)/12000000000);
 		       	}
 		        break;
-		    case 5:
+		    case 5: // Lediga jobb
 		    	for(var lan = 0; lan < 21; lan++){
-		        	alla_lan[lan].mesh.position.y = moveLan(diff_time, move_time, alla_lan[lan].current_mesh_position, (alla_lan[lan].studieskuld_man + alla_lan[lan].studieskuld_kvinnor)/12000000000);
+		        	alla_lan[lan].mesh.position.y = moveLan(diff_time, move_time, alla_lan[lan].current_mesh_position, alla_lan[lan].n_lediga_jobb/100000);
 		       	}
 		        break;
-		    case 6:
+		    case 6: // Jmfr total arbetslöshet
 		    	for(var lan = 0; lan < 21; lan++){
-		        	alla_lan[lan].mesh.position.y = moveLan(diff_time, move_time, alla_lan[lan].current_mesh_position, (alla_lan[lan].studieskuld_man + alla_lan[lan].studieskuld_kvinnor)/12000000000);
+		        	alla_lan[lan].mesh.position.y = moveLan(diff_time, move_time, alla_lan[lan].current_mesh_position, (alla_lan[lan].n_kvinnor_arbetslosa - alla_lan[lan].n_man_arbetslosa)/10000);
 		       	}
 		        break;
-		    case 7:
+		    case 7: // Jmfr unga arbetslöshet
 		    	for(var lan = 0; lan < 21; lan++){
-		        	alla_lan[lan].mesh.position.y = moveLan(diff_time, move_time, alla_lan[lan].current_mesh_position, (alla_lan[lan].studieskuld_man + alla_lan[lan].studieskuld_kvinnor)/12000000000);
+		        	alla_lan[lan].mesh.position.y = moveLan(diff_time, move_time, alla_lan[lan].current_mesh_position, (alla_lan[lan].n_unga_kvinnor_arbetslosa - alla_lan[lan].n_unga_man_arbetslosa)/10000);
 		       	}
 		    	break;
-		    case 8:
+		    case 8: // Jmfr antal med studieskuld
 		    	for(var lan = 0; lan < 21; lan++){
-		        	alla_lan[lan].mesh.position.y = moveLan(diff_time, move_time, alla_lan[lan].current_mesh_position, (alla_lan[lan].studieskuld_man + alla_lan[lan].studieskuld_kvinnor)/12000000000);
+		        	alla_lan[lan].mesh.position.y = moveLan(diff_time, move_time, alla_lan[lan].current_mesh_position, (alla_lan[lan].n_kvinnor_studieskuld - alla_lan[lan].n_man_studieskuld)/10000);
 		       	}
 		        break;
 		    default:
