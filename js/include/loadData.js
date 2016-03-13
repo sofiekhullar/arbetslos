@@ -19,6 +19,10 @@ function loadData() {
 	$.getJSON("json/lediga_jobb_per_lan.json", function(json) {
 		loadLedigajobb(json);
 		loadRiketVarden();
+
+		createCharts();
+		createCharts2();
+		createCharts3();
 	});
 }
 
@@ -77,6 +81,15 @@ function loadVotes(dataset) {
 		 alla_lan[i].v /= all_votes;
 		 alla_lan[i].sd /= all_votes;
 
+		 alla_lan[i].m *= 100;
+		 alla_lan[i].c *= 100;
+		 alla_lan[i].fp *= 100;
+		 alla_lan[i].kd *= 100;
+		 alla_lan[i].mp *= 100;
+		 alla_lan[i].s *= 100;
+		 alla_lan[i].v *= 100;
+		 alla_lan[i].sd *= 100;
+
 	}
 		
 }
@@ -117,12 +130,13 @@ function loadCSN(dataset) {
 
 
 function loadArbetsloshet(json){
+	console.log(json)
 
 
-	for(i=0; i < 21 ; i++){
-		for(j=0; j < 21; j++){
+	for(i = 0; i < 21 ; i++) {
+		for(j = 0; j < 21; j++) {
 
-			if(json.Blad1[i]["län"].localeCompare(alla_lan[j].namn)==0){
+			if(json.Blad1[i]["län"].localeCompare(alla_lan[j].namn) == 0) {
 
 				alla_lan[j].n_totalt_arbetslosa =
 					parseInt(json.Blad1[i].alla_total/100 * alla_lan[j].total_befolkning);
@@ -142,6 +156,11 @@ function loadArbetsloshet(json){
 				
 				alla_lan[j].n_unga_man_arbetslosa =
 					parseInt(json.Blad1[i].ung_kvinnor/100 * alla_lan[j].ung_befolkning/2);
+
+					console.log(alla_lan[i].namn)
+					console.log(alla_lan[i].n_kvinnor_arbetslosa + alla_lan[i].n_man_arbetslosa - alla_lan[i].n_totalt_arbetslosa)
+					console.log(alla_lan[i].n_unga_kvinnor_arbetslosa + alla_lan[i].n_unga_man_arbetslosa - alla_lan[i].n_unga_arbetslosa)
+					//console.log(alla_lan[i].total_befolkning)
 
 			}
 		}
